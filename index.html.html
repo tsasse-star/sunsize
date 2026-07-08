@@ -1,0 +1,2568 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="SunSize">
+<meta name="theme-color" content="#0A0F14">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAEzklEQVRYhbWXyW8cRRTGf6+7ZqZ7PF5i43i84DhjlHHkkAQE4gThgq0IDpwQ4sCBa4SQAuQfQFxyiEDimmuCkOAUhJJIiEUcQiALxEqsJLYxNhMreMOjcfd0dxWH9ngdjxc5TyrNq/5U7/vmVdWrKmGVdeSP5nVkfQAMAF1Aij0x44GMYMzXygk/mxgamqkgUnGyvcfPgPkUUHtDuqk9Npi3px7+8f2ygGzv8Y8N5uwTJl5tvmXpgcL9P3+SjoNH85HFHZ78P19nphCpct6ua277BHhpNyGe71a0N1oU5vUuRku9pdWC0piB3ZADOEkDgMHsMoK8pTB07VZAFC0R75Yfk7fApOIIG1u9Yzg9mEJZ1fFroyHXRsOqmLLisfVO9bFLzbVq6Vvw4OqdgNODDiJrsbokHOkQ+tuFuuRaTARODzpcvROw4NXOgbT29G+ZwK59NpNzEcZAcxrODCreeM4hlbAB8IOISzd9zl4OmCnFAjqbbCZmo61Cb09Axfal4cJ7SZ7pdFFOBkk4AJjAI/SKPJhc5J3zPrOLskWkFbMwhu22UyeEXDaJcjLYdc2ohv2ohv2x72TIZZOcOmFtOx7GsMny2thE4GS/wrZtJOliOfXYmVbsTCuWU48kXWzb5uQRhcj2YhpAVdtDr/YlyDbaaAOXbvuUfEOTa2hwVk+egGWt+EvW4ECjq5ktCemU8MaxFJbAo/mIH+4FG7hUtT08/Cjin1mNMeAHsdQwAq01UaSxAw/tFamcZdorYgKPKNJorQmCOAV+ADfHAkRgwTdV60XVDBRmIwrrvv3nwd/TIQcTAfYSuQ5KAJiyR+QVCYOA8emQYjmOGUWG+1O1y7QyO6hiF6+HfDTgA5CIIiwv3oY6igjKAWXf5+KvIcbULC9rBeykjl74HZ5t93mtXxMGAZa9IiAMQ64MBVy8IewkprR05XdUyUXg9cOaN49BPhuvgeFHhm9uG767a7OTjC4JOLTro2QvTNViFzdF5uUXoBTPu5V20CVvyXfRpcUN323XQXs+xhhIpyj+/Btm0d9cQK2cufkc/q17hI9nsFwHu62FYGwSAOdwL97dhwCk+nL490bigK3NGGOI/p1FtTThHjpI6dbdTTlqLle7tZnwcXyBTXS0EU5OxZlRChNUP2ii6TkSLU0AhNNz2PtbalGgTI0MWCJYaZdEdzvJA52wdPrZLU0YPyTVlwOIsVWWONCJESGcmMISoRbHphdRsSxMFKFLi8vprfym+nL4w6Osnr4KBiAiy30TacS2MFH1gqTiRwPOeiCZ66I8NomVduNsuKm1vrsyxHKSyxiArOr7Y5MkezrxH45X4/cVRobBHFuPpHq6KP14nURXGyiFlU6jnorn1m5sWPa36gdjE6RfeRH/wUYBAuMKoq8MskGAKBujNeXxAomeThZvDKEXl7ZgXZry+MppIWl3TX8DruyqN2cjXFHi21/opH5fILsaTPZ2k5F40anmRsKZ+WVMNTeinu5Y0090ryxEq76ORO4AJoiP32Sus1p1DnTI5wLQlO05AXKZPXuMbsNEPpwrjJyzAbzi3F9OpvEXg5wE6p4wdSAiZ+YKI+cA7MpXrzg/5jQ3nJdIfIxpARrYu/eiD4yKkS+Nlnfnp0a+rQD/A5LzPh8al9KLAAAAAElFTkSuQmCC">
+<title>SunSize</title>
+<style>
+  html,body{margin:0;padding:0;background:#0A0F14;min-height:100vh;background-image:radial-gradient(rgba(245,165,36,0.05) 1px, transparent 1px);background-size:22px 22px;}
+  #root{color:#F3EFE6;font-family:sans-serif;padding:1rem;}
+  #err{color:#E85C4A;font-family:monospace;font-size:0.8rem;padding:1rem;white-space:pre-wrap;display:none;}
+</style>
+<script>
+  window.onerror = function(msg, url, line) {
+    var e = document.getElementById("err");
+    e.style.display = "block";
+    e.textContent = "Erreur JS : " + msg + " (ligne " + line + ")";
+    return false;
+  };
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      if (typeof React === "undefined" || typeof ReactDOM === "undefined" || typeof Babel === "undefined") {
+        var e = document.getElementById("err");
+        e.style.display = "block";
+        e.textContent = "Impossible de charger React/Babel depuis internet (connexion coupée ou bloqueur de script actif). Vérifiez votre connexion puis rechargez la page.";
+      }
+    }, 4000);
+  });
+</script>
+<script crossorigin src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js" onerror="this.onerror=null;this.src='https://unpkg.com/react@18/umd/react.production.min.js';"></script>
+<script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js" onerror="this.onerror=null;this.src='https://unpkg.com/react-dom@18/umd/react-dom.production.min.js';"></script>
+<script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7/babel.min.js" onerror="this.onerror=null;this.src='https://unpkg.com/@babel/standalone@7/babel.min.js';"></script>
+</head>
+<body>
+<div id="root">Chargement de l\'outil...</div>
+<div id="err"></div>
+<script type="text/babel" data-presets="react">
+const { useState, useMemo, useId } = React;
+
+
+/* ============================= DONNÉES ============================= */
+
+const LOCATIONS = {
+  "yaounde": { label: "Yaoundé, Cameroun", psh: [4.6,4.7,4.4,4.2,4.0,3.6,3.4,3.6,3.8,4.1,4.4,4.6] },
+  "douala": { label: "Douala, Cameroun", psh: [4.4,4.5,4.2,4.0,3.8,3.3,3.0,3.2,3.5,3.9,4.2,4.4] },
+  "dakar": { label: "Dakar, Sénégal", psh: [5.6,6.0,6.3,6.4,6.3,6.0,5.4,5.0,5.3,5.7,5.6,5.4] },
+  "bamako": { label: "Bamako, Mali", psh: [5.5,6.0,6.3,6.4,6.2,5.7,5.0,4.6,5.2,5.8,5.6,5.3] },
+  "ouaga": { label: "Ouagadougou, Burkina Faso", psh: [5.5,5.9,6.2,6.3,6.1,5.6,5.0,4.7,5.2,5.7,5.6,5.3] },
+  "ndjamena": { label: "N'Djamena, Tchad", psh: [5.7,6.1,6.4,6.5,6.3,5.8,5.2,5.0,5.5,5.9,5.7,5.5] },
+  "kinshasa": { label: "Kinshasa, RDC", psh: [5.0,4.9,4.7,4.4,4.0,3.6,3.5,4.0,4.4,4.6,4.7,4.9] },
+  "abidjan": { label: "Abidjan, Côte d'Ivoire", psh: [4.9,5.2,5.1,4.9,4.5,3.8,3.4,3.3,3.7,4.3,4.7,4.8] },
+  "alger": { label: "Alger, Algérie", psh: [3.0,3.8,4.8,5.7,6.5,7.2,7.4,6.8,5.6,4.3,3.2,2.7] },
+  "paris": { label: "Paris, France", psh: [1.3,2.1,3.2,4.4,5.3,5.7,5.8,5.2,3.9,2.4,1.4,1.1] },
+  "marseille": { label: "Marseille, France", psh: [2.1,3.0,4.3,5.4,6.2,6.9,7.3,6.5,5.0,3.3,2.2,1.8] },
+  "montreal": { label: "Montréal, Canada", psh: [1.8,2.7,3.7,4.5,5.3,5.6,5.7,5.0,3.9,2.6,1.6,1.3] },
+};
+
+const MOIS = ["Jan","Fév","Mar","Avr","Mai","Jun","Jul","Aoû","Sep","Oct","Nov","Déc"];
+
+const ORIENTATIONS = {
+  optimal: { label: "Face à l'équateur, inclinaison ≈ latitude", factor: 100 },
+  plat: { label: "Face à l'équateur, pose plate (0–10°)", factor: 93 },
+  esotimal: { label: "Est ou Ouest, inclinaison optimale", factor: 90 },
+  esplat: { label: "Est ou Ouest, pose plate", factor: 85 },
+  facade: { label: "Façade verticale, face à l'équateur", factor: 75 },
+  oppose: { label: "Face opposée à l'équateur (pire cas)", factor: 65 },
+  custom: { label: "Personnalisé", factor: null },
+};
+
+const BATTERIES = {
+  flooded: { label: "Plomb ouvert (flooded)", dod: 50, eff: 80, unitV: 12, unitAh: 200 },
+  agm: { label: "Plomb AGM / Gel", dod: 60, eff: 85, unitV: 12, unitAh: 200 },
+  lithium: { label: "Lithium LiFePO4", dod: 90, eff: 95, unitV: 12, unitAh: 200 },
+};
+
+const APPLIANCE_PRESETS = [
+  { name: "Ampoule LED", power: 10, hours: 5 },
+  { name: "Réfrigérateur", power: 150, hours: 8 },
+  { name: "Téléviseur", power: 80, hours: 4 },
+  { name: "Routeur Wi-Fi", power: 10, hours: 24 },
+  { name: "Pompe à eau", power: 750, hours: 1 },
+  { name: "Ordinateur portable", power: 65, hours: 4 },
+  { name: "Ventilateur", power: 60, hours: 6 },
+  { name: "Chargeur téléphone", power: 10, hours: 2 },
+];
+
+const CONTROLLER_SIZES = [10,15,20,25,30,40,50,60,80,100];
+const INVERTER_SIZES = [300,500,800,1000,1500,2000,3000,4000,5000,6000,8000,10000];
+const CABLE_SIZES = [1.5,2.5,4,6,10,16,25,35,50,70,95,120];
+
+const roundUpTo = (val, list) => list.find((s) => s >= val) ?? list[list.length - 1];
+const fmt = (n, d = 0) => Number(n).toLocaleString("fr-FR", { maximumFractionDigits: d, minimumFractionDigits: d });
+
+const CONTACTS = [
+  { label: "+237 695 324 264", wa: "237695324264" },
+  { label: "+237 671 590 964", wa: "237671590964" },
+];
+
+function LogoMark({ size = 28 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="64" height="64" rx="14" fill="#0F1720" />
+      <g stroke="#F2A93C" strokeWidth="2" strokeLinecap="round" opacity="0.9">
+        <line x1="32" y1="9" x2="32" y2="14" />
+        <line x1="16" y1="15" x2="19.5" y2="18.5" />
+        <line x1="48" y1="15" x2="44.5" y2="18.5" />
+      </g>
+      <circle cx="32" cy="27" r="10.5" fill="#F2A93C" />
+      <path d="M13 55 L17 41 L47 41 L51 55 Z" fill="#141d27" stroke="#35D0C0" strokeWidth="2" />
+      <line x1="26" y1="41" x2="22" y2="55" stroke="#35D0C0" strokeWidth="1.5" />
+      <line x1="38" y1="41" x2="42" y2="55" stroke="#35D0C0" strokeWidth="1.5" />
+      <line x1="19" y1="48" x2="45" y2="48" stroke="#35D0C0" strokeWidth="1.5" />
+    </svg>
+  );
+}
+
+function WhatsAppIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.5 14.4c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.7 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z" />
+      <path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.3l-.3-.2-3 .8.8-2.9-.2-.3C4 15 3.5 13.5 3.5 12 3.5 7.3 7.3 3.5 12 3.5S20.5 7.3 20.5 12 16.7 20.2 12 20.2z" />
+    </svg>
+  );
+}
+
+/* ---- Jeu d'icônes (traits fins) pour les onglets et la page d'accueil ---- */
+const ICON_PROPS = { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "1.7", strokeLinecap: "round", strokeLinejoin: "round" };
+
+function HomeIcon({ size = 18 }) {
+  return (
+    <svg width={size} height={size} {...ICON_PROPS}>
+      <path d="M3 11.5 12 4l9 7.5" />
+      <path d="M5.5 10v9a1 1 0 0 0 1 1H9a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h2.5a1 1 0 0 0 1-1v-9" />
+    </svg>
+  );
+}
+function SunTabIcon({ size = 18 }) {
+  return (
+    <svg width={size} height={size} {...ICON_PROPS}>
+      <circle cx="12" cy="12" r="4.2" />
+      <path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" />
+    </svg>
+  );
+}
+function BoltTabIcon({ size = 18 }) {
+  return (
+    <svg width={size} height={size} {...ICON_PROPS}>
+      <path d="M12.5 2 4 13.5h6L10.5 22 20 9.5h-6.2L12.5 2Z" />
+    </svg>
+  );
+}
+function CameraTabIcon({ size = 18 }) {
+  return (
+    <svg width={size} height={size} {...ICON_PROPS}>
+      <path d="M4 8.5A1.5 1.5 0 0 1 5.5 7h2.2l1-1.6A1.5 1.5 0 0 1 10 4.6h4a1.5 1.5 0 0 1 1.3.8l1 1.6h2.2A1.5 1.5 0 0 1 20 8.5v9A1.5 1.5 0 0 1 18.5 19h-13A1.5 1.5 0 0 1 4 17.5v-9Z" />
+      <circle cx="12" cy="12.5" r="3.4" />
+    </svg>
+  );
+}
+function DropletTabIcon({ size = 18 }) {
+  return (
+    <svg width={size} height={size} {...ICON_PROPS}>
+      <path d="M12 3s6.5 7.2 6.5 11.5a6.5 6.5 0 1 1-13 0C5.5 10.2 12 3 12 3Z" />
+    </svg>
+  );
+}
+function SnowflakeTabIcon({ size = 18 }) {
+  return (
+    <svg width={size} height={size} {...ICON_PROPS}>
+      <path d="M12 2v20M4.5 6.5l15 11M19.5 6.5l-15 11M9.8 4.4 12 6l2.2-1.6M9.8 19.6 12 18l2.2 1.6M4.9 8.9l-3-.5.6-3M4.9 15.1l-3 .5.6 3M19.1 8.9l3-.5-.6-3M19.1 15.1l3 .5-.6 3" />
+    </svg>
+  );
+}
+function DocTabIcon({ size = 18 }) {
+  return (
+    <svg width={size} height={size} {...ICON_PROPS}>
+      <path d="M7 3.5h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-16a1 1 0 0 1 1-1Z" />
+      <path d="M14 3.5V8h4" />
+      <path d="M8.5 12.5h7M8.5 15.5h7M8.5 18h4" />
+    </svg>
+  );
+}
+function GeneratorTabIcon({ size = 18 }) {
+  return (
+    <svg width={size} height={size} {...ICON_PROPS}>
+      <rect x="3" y="7" width="14" height="11" rx="1.2" />
+      <circle cx="10" cy="12.5" r="2.6" />
+      <path d="M12.6 10.7 8 14.3M17 10.5h4M17 15h4M6.2 7V5M13 7V5" />
+    </svg>
+  );
+}
+function WaterHeaterTabIcon({ size = 18 }) {
+  return (
+    <svg width={size} height={size} {...ICON_PROPS}>
+      <path d="M3 8 L11 4 L11 15 L3 19 Z" />
+      <path d="M11 4 3 8M11 15 3 19" />
+      <rect x="13.5" y="9" width="7" height="11.5" rx="1.5" />
+      <path d="M17 12v5M15.3 15.2h3.4" />
+    </svg>
+  );
+}
+function StreetLightTabIcon({ size = 18 }) {
+  return (
+    <svg width={size} height={size} {...ICON_PROPS}>
+      <path d="M6 21h6M9 21V9" />
+      <path d="M9 9h6.5a2 2 0 0 0 0-4H12" />
+      <circle cx="9" cy="4.3" r="2.1" />
+      <path d="M9 15.5h4.2M9 18.2h5.6" opacity="0.6" />
+    </svg>
+  );
+}
+function ROITabIcon({ size = 18 }) {
+  return (
+    <svg width={size} height={size} {...ICON_PROPS}>
+      <path d="M4 19h16" />
+      <path d="M6.5 19v-5.5M11 19V8M15.5 19v-9M20 19V5" />
+      <path d="M4 9.5 9 5l3.5 3L20 3" />
+      <path d="M16.5 3h3.5v3.5" />
+    </svg>
+  );
+}
+
+const TOOLS = [
+  { key: "solar", Icon: SunTabIcon, title: "Dimensionnement solaire", desc: "Panneaux, batteries, régulateur et onduleur à partir des besoins réels." },
+  { key: "cable", Icon: BoltTabIcon, title: "Câblage & protection", desc: "Section de câble, calibre de fusible, protection foudre et mise à la terre." },
+  { key: "video", Icon: CameraTabIcon, title: "Vidéosurveillance", desc: "Stockage NVR nécessaire selon caméras, résolution et rétention." },
+  { key: "pump", Icon: DropletTabIcon, title: "Pompage solaire", desc: "Champ PV requis à partir du débit d'eau et de la hauteur manométrique." },
+  { key: "ac", Icon: SnowflakeTabIcon, title: "Climatisation", desc: "Puissance frigorifique et consommation électrique d'une pièce." },
+  { key: "genset", Icon: GeneratorTabIcon, title: "Groupe électrogène hybride", desc: "Puissance de secours, autonomie et conso carburant en complément du PV." },
+  { key: "heater", Icon: WaterHeaterTabIcon, title: "Chauffe-eau solaire", desc: "Capteur ou résistance PV nécessaire selon volume et température d'eau visée." },
+  { key: "light", Icon: StreetLightTabIcon, title: "Éclairage public solaire", desc: "Lampadaire autonome : LED, batterie et panneau selon durée d'éclairage." },
+  { key: "roi", Icon: ROITabIcon, title: "ROI & financement", desc: "Retour sur investissement et comparaison cash / crédit / leasing." },
+  { key: "quote", Icon: DocTabIcon, title: "Devis professionnel", desc: "Chiffrez le matériel, la marge, et générez un devis prêt à imprimer." },
+];
+
+/* ============================= COMPOSANT ============================= */
+
+function SolarSizingApp() {
+  const [mode, setMode] = useState("home"); // "home" | "solar" | "cable" | "video" | "pump" | "ac" | "genset" | "heater" | "light" | "roi" | "quote"
+  const [step, setStep] = useState(1);
+
+  // --- Étape 1 : besoins ---
+  const [applianceMode, setApplianceMode] = useState(true);
+  const [appliances, setAppliances] = useState([
+    { id: 1, name: "Ampoule LED", power: 10, qty: 4, hours: 5 },
+    { id: 2, name: "Réfrigérateur", power: 150, qty: 1, hours: 8 },
+  ]);
+  const [manualMode, setManualMode] = useState(false);
+  const [manualPeriod, setManualPeriod] = useState("mois");
+  const [manualValue, setManualValue] = useState(90);
+  const [manualPeakW, setManualPeakW] = useState(800);
+
+  // --- Outil : estimer une puissance inconnue (A × V) ---
+  const [helperName, setHelperName] = useState("");
+  const [helperVoltage, setHelperVoltage] = useState(220);
+  const [helperCurrent, setHelperCurrent] = useState(1);
+  const [helperCosPhi, setHelperCosPhi] = useState(1);
+  const [helperQty, setHelperQty] = useState(1);
+  const [helperHours, setHelperHours] = useState(2);
+  const [showPowerHelper, setShowPowerHelper] = useState(false);
+
+  // --- Étape 2 : site & pertes ---
+  const [location, setLocation] = useState("yaounde");
+  const [customPsh, setCustomPsh] = useState(4.5);
+  const [worstMonth, setWorstMonth] = useState(true);
+  const [orientation, setOrientation] = useState("optimal");
+  const [customFactor, setCustomFactor] = useState(85);
+  const [cableLoss, setCableLoss] = useState(3);
+  const [derating, setDerating] = useState(8);
+  const [regulatorEff, setRegulatorEff] = useState(97);
+  const [inverterEff, setInverterEff] = useState(92);
+  const [batteryType, setBatteryType] = useState("lithium");
+  const [dodOverride, setDodOverride] = useState(null);
+  const [effOverride, setEffOverride] = useState(null);
+  const [autonomyDays, setAutonomyDays] = useState(3);
+  const [panelWp, setPanelWp] = useState(450);
+  const [systemVoltage, setSystemVoltage] = useState(24);
+  const [simultaneity, setSimultaneity] = useState(80);
+
+  // --- Outil bonus : câbles ---
+  const [cableLen, setCableLen] = useState(5);
+  const [cableCurrent, setCableCurrent] = useState(20);
+  const [cableDrop, setCableDrop] = useState(2);
+  const [showCableTool, setShowCableTool] = useState(false);
+
+  const idBase = useId();
+
+  /* --------- Calculs --------- */
+
+  const applianceTotalWh = useMemo(
+    () => (applianceMode ? appliances.reduce((s, a) => s + a.power * a.qty * a.hours, 0) : 0),
+    [appliances, applianceMode]
+  );
+  const appliancePeakW = useMemo(
+    () => (applianceMode ? appliances.reduce((s, a) => s + a.power * a.qty, 0) : 0),
+    [appliances, applianceMode]
+  );
+
+  const manualDailyWh = useMemo(() => {
+    if (!manualMode) return 0;
+    const kwh = Number(manualValue) || 0;
+    if (manualPeriod === "jour") return kwh * 1000;
+    if (manualPeriod === "mois") return (kwh * 1000) / 30;
+    return (kwh * 1000) / 365;
+  }, [manualMode, manualValue, manualPeriod]);
+
+  const dailyNeedWh = applianceTotalWh + manualDailyWh;
+  const peakLoadW = (applianceMode ? appliancePeakW : 0) + (manualMode ? Number(manualPeakW) || 0 : 0);
+
+  const loc = LOCATIONS[location];
+  const monthlyPsh = loc ? loc.psh : null;
+  const avgPsh = monthlyPsh ? monthlyPsh.reduce((a, b) => a + b, 0) / 12 : Number(customPsh);
+  const minPsh = monthlyPsh ? Math.min(...monthlyPsh) : Number(customPsh);
+  const pshUsed = location === "custom" ? Number(customPsh) : worstMonth ? minPsh : avgPsh;
+
+  const orientFactor = orientation === "custom" ? Number(customFactor) : ORIENTATIONS[orientation].factor;
+
+  const battPreset = BATTERIES[batteryType];
+  const dod = dodOverride ?? battPreset.dod;
+  const battEff = effOverride ?? battPreset.eff;
+
+  const etaTotal =
+    (inverterEff / 100) *
+    (battEff / 100) *
+    (1 - cableLoss / 100) *
+    (regulatorEff / 100) *
+    (orientFactor / 100) *
+    (1 - derating / 100);
+
+  const panelEnergyNeededWh = etaTotal > 0 ? dailyNeedWh / etaTotal : 0;
+  const peakPowerNeededWc = pshUsed > 0 ? panelEnergyNeededWh / pshUsed : 0;
+  const nbPanels = panelWp > 0 ? Math.ceil(peakPowerNeededWc / panelWp) : 0;
+  const realPeakWc = nbPanels * panelWp;
+
+  const energyFromBatteryWh = inverterEff > 0 ? dailyNeedWh / (inverterEff / 100) : dailyNeedWh;
+  const bankAh = dod > 0 && systemVoltage > 0 ? (energyFromBatteryWh * autonomyDays) / (systemVoltage * (dod / 100)) : 0;
+  const bankKwh = (bankAh * systemVoltage) / 1000;
+
+  const unitV = battPreset.unitV;
+  const unitAh = battPreset.unitAh;
+  const seriesCount = Math.max(1, Math.round(systemVoltage / unitV));
+  const parallelCount = unitAh > 0 ? Math.ceil(bankAh / unitAh) : 0;
+  const totalBatteries = seriesCount * parallelCount;
+
+  const controllerCurrentRaw = systemVoltage > 0 ? (realPeakWc / systemVoltage) * 1.25 : 0;
+  const controllerSize = roundUpTo(controllerCurrentRaw, CONTROLLER_SIZES);
+
+  const inverterNeededW = peakLoadW * (simultaneity / 100);
+  const inverterSize = roundUpTo(inverterNeededW, INVERTER_SIZES);
+
+  const panelAreaApprox = nbPanels * 1.8; // m² approx par module
+
+  const cableRho = 0.0175; // Ω·mm²/m cuivre
+  const cableDropV = systemVoltage * (cableDrop / 100);
+  const cableSectionRaw = cableDropV > 0 ? (2 * cableLen * cableCurrent * cableRho) / cableDropV : 0;
+  const cableSection = roundUpTo(cableSectionRaw, CABLE_SIZES);
+
+  const hasInput = dailyNeedWh > 0;
+
+  const helperPowerW = Number(helperVoltage) * Number(helperCurrent) * Number(helperCosPhi);
+
+  /* --------- Handlers --------- */
+
+  const updateAppliance = (id, field, value) =>
+    setAppliances((list) => list.map((a) => (a.id === id ? { ...a, [field]: value } : a)));
+  const removeAppliance = (id) => setAppliances((list) => list.filter((a) => a.id !== id));
+  const addAppliance = (preset) =>
+    setAppliances((list) => [
+      ...list,
+      { id: Date.now() + Math.random(), name: preset?.name ?? "Nouvel appareil", power: preset?.power ?? 50, qty: preset?.qty ?? 1, hours: preset?.hours ?? 2 },
+    ]);
+
+  const steps = [
+    { n: 1, label: "Besoins" },
+    { n: 2, label: "Site & pertes" },
+    { n: 3, label: "Résultats" },
+  ];
+
+  return (
+    <div className="ssa-root">
+      <style>{CSS}</style>
+
+      <header className="ssa-header">
+        <div className="ssa-header-top">
+          <button className="ssa-brand" onClick={() => setMode("home")}>
+            <LogoMark size={32} />
+            <div>
+              <span className="ssa-eyebrow">Dimensionnement</span>
+              <h1>SunSize</h1>
+            </div>
+          </button>
+          {mode !== "home" && (
+            <button className="ssa-home-btn" onClick={() => setMode("home")} aria-label="Retour à l'accueil">
+              <HomeIcon size={17} />
+            </button>
+          )}
+        </div>
+
+        {mode !== "home" && (
+          <div className="ssa-tabs">
+            <button className={`ssa-tab ${mode === "solar" ? "on" : ""}`} onClick={() => setMode("solar")}><SunTabIcon /> Solaire</button>
+            <button className={`ssa-tab ${mode === "cable" ? "on" : ""}`} onClick={() => setMode("cable")}><BoltTabIcon /> Câblage & protection</button>
+            <button className={`ssa-tab ${mode === "video" ? "on" : ""}`} onClick={() => setMode("video")}><CameraTabIcon /> Vidéosurveillance</button>
+            <button className={`ssa-tab ${mode === "pump" ? "on" : ""}`} onClick={() => setMode("pump")}><DropletTabIcon /> Pompage solaire</button>
+            <button className={`ssa-tab ${mode === "ac" ? "on" : ""}`} onClick={() => setMode("ac")}><SnowflakeTabIcon /> Climatisation</button>
+            <button className={`ssa-tab ${mode === "genset" ? "on" : ""}`} onClick={() => setMode("genset")}><GeneratorTabIcon /> Groupe électrogène</button>
+            <button className={`ssa-tab ${mode === "heater" ? "on" : ""}`} onClick={() => setMode("heater")}><WaterHeaterTabIcon /> Chauffe-eau</button>
+            <button className={`ssa-tab ${mode === "light" ? "on" : ""}`} onClick={() => setMode("light")}><StreetLightTabIcon /> Éclairage public</button>
+            <button className={`ssa-tab ${mode === "roi" ? "on" : ""}`} onClick={() => setMode("roi")}><ROITabIcon /> ROI & financement</button>
+            <button className={`ssa-tab ${mode === "quote" ? "on" : ""}`} onClick={() => setMode("quote")}><DocTabIcon /> Devis</button>
+          </div>
+        )}
+
+        {mode === "solar" && (
+          <div className="ssa-progress">
+            {steps.map((s, i) => (
+              <div key={s.n} className={`ssa-progress-seg ${step >= s.n ? "on" : ""}`}>
+                <span className="ssa-progress-dot">{s.n}</span>
+                <span className="ssa-progress-label">{s.label}</span>
+                {i < steps.length - 1 && <span className="ssa-progress-line" />}
+              </div>
+            ))}
+          </div>
+        )}
+      </header>
+
+      <main className="ssa-main">
+        {mode === "home" && (
+          <HomeScreen onNavigate={(m) => { setMode(m); setStep(1); }} />
+        )}
+
+        {mode === "solar" && step === 1 && (
+          <StepBesoins
+            applianceMode={applianceMode} setApplianceMode={setApplianceMode}
+            appliances={appliances} updateAppliance={updateAppliance}
+            removeAppliance={removeAppliance} addAppliance={addAppliance}
+            manualMode={manualMode} setManualMode={setManualMode}
+            manualPeriod={manualPeriod} setManualPeriod={setManualPeriod}
+            manualValue={manualValue} setManualValue={setManualValue}
+            manualPeakW={manualPeakW} setManualPeakW={setManualPeakW}
+            applianceTotalWh={applianceTotalWh} manualDailyWh={manualDailyWh}
+            dailyNeedWh={dailyNeedWh} idBase={idBase}
+            helperName={helperName} setHelperName={setHelperName}
+            helperVoltage={helperVoltage} setHelperVoltage={setHelperVoltage}
+            helperCurrent={helperCurrent} setHelperCurrent={setHelperCurrent}
+            helperCosPhi={helperCosPhi} setHelperCosPhi={setHelperCosPhi}
+            helperQty={helperQty} setHelperQty={setHelperQty}
+            helperHours={helperHours} setHelperHours={setHelperHours}
+            helperPowerW={helperPowerW}
+            showPowerHelper={showPowerHelper} setShowPowerHelper={setShowPowerHelper}
+          />
+        )}
+
+        {mode === "solar" && step === 2 && (
+          <StepSite
+            location={location} setLocation={setLocation}
+            customPsh={customPsh} setCustomPsh={setCustomPsh}
+            monthlyPsh={monthlyPsh} avgPsh={avgPsh} minPsh={minPsh}
+            worstMonth={worstMonth} setWorstMonth={setWorstMonth}
+            orientation={orientation} setOrientation={setOrientation}
+            customFactor={customFactor} setCustomFactor={setCustomFactor}
+            cableLoss={cableLoss} setCableLoss={setCableLoss}
+            derating={derating} setDerating={setDerating}
+            regulatorEff={regulatorEff} setRegulatorEff={setRegulatorEff}
+            inverterEff={inverterEff} setInverterEff={setInverterEff}
+            batteryType={batteryType} setBatteryType={setBatteryType}
+            dod={dod} setDodOverride={setDodOverride}
+            battEff={battEff} setEffOverride={setEffOverride}
+            autonomyDays={autonomyDays} setAutonomyDays={setAutonomyDays}
+            panelWp={panelWp} setPanelWp={setPanelWp}
+            systemVoltage={systemVoltage} setSystemVoltage={setSystemVoltage}
+            simultaneity={simultaneity} setSimultaneity={setSimultaneity}
+            pshUsed={pshUsed}
+          />
+        )}
+
+        {mode === "solar" && step === 3 && (
+          <StepResultats
+            hasInput={hasInput}
+            dailyNeedWh={dailyNeedWh} panelEnergyNeededWh={panelEnergyNeededWh}
+            etaTotal={etaTotal} pshUsed={pshUsed}
+            nbPanels={nbPanels} panelWp={panelWp} realPeakWc={realPeakWc} panelAreaApprox={panelAreaApprox}
+            bankAh={bankAh} bankKwh={bankKwh} systemVoltage={systemVoltage}
+            seriesCount={seriesCount} parallelCount={parallelCount} totalBatteries={totalBatteries}
+            unitV={unitV} unitAh={unitAh} autonomyDays={autonomyDays} dod={dod}
+            controllerSize={controllerSize} controllerCurrentRaw={controllerCurrentRaw}
+            inverterSize={inverterSize} inverterNeededW={inverterNeededW} peakLoadW={peakLoadW}
+            showCableTool={showCableTool} setShowCableTool={setShowCableTool}
+            cableLen={cableLen} setCableLen={setCableLen}
+            cableCurrent={cableCurrent} setCableCurrent={setCableCurrent}
+            cableDrop={cableDrop} setCableDrop={setCableDrop}
+            cableSection={cableSection}
+          />
+        )}
+
+        {mode === "cable" && <CableProtectionTool />}
+        {mode === "video" && <VideoSurveillanceTool />}
+        {mode === "pump" && <SolarPumpingTool />}
+        {mode === "ac" && <AirConTool />}
+        {mode === "genset" && <GeneratorTool />}
+        {mode === "heater" && <WaterHeaterTool />}
+        {mode === "light" && <StreetLightTool />}
+        {mode === "roi" && <ROITool />}
+        {mode === "quote" && <QuoteTool />}
+      </main>
+
+      <footer className="ssa-footer">
+        <div className="ssa-footer-brand">
+          <LogoMark size={26} />
+          <span>SunSize</span>
+        </div>
+        <p className="ssa-footer-title">Besoin d'un devis ou d'une installation ?</p>
+        <div className="ssa-contact-row">
+          {CONTACTS.map((c) => (
+            <a
+              key={c.wa}
+              className="ssa-contact-btn"
+              href={`https://wa.me/${c.wa}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <WhatsAppIcon />
+              {c.label}
+            </a>
+          ))}
+        </div>
+      </footer>
+
+      {mode === "solar" && (
+        <nav className="ssa-nav">
+          <button className="ssa-btn ghost" disabled={step === 1} onClick={() => setStep((s) => Math.max(1, s - 1))}>
+            ← Précédent
+          </button>
+          <span className="ssa-nav-summary">
+            {fmt(dailyNeedWh / 1000, 2)} kWh/j
+          </span>
+          {step < 3 ? (
+            <button className="ssa-btn primary" onClick={() => setStep((s) => Math.min(3, s + 1))}>
+              Suivant →
+            </button>
+          ) : (
+            <button className="ssa-btn primary" onClick={() => setStep(1)}>
+              Recommencer
+            </button>
+          )}
+        </nav>
+      )}
+    </div>
+  );
+}
+
+/* ============================= ACCUEIL ============================= */
+
+function HomeScreen({ onNavigate }) {
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-hero">
+        <LogoMark size={52} />
+        <span className="ssa-eyebrow">Dimensionnement & devis solaire</span>
+        <h1 className="ssa-hero-title">Chiffrez une installation solaire fiable, sur le terrain.</h1>
+        <p className="ssa-hero-sub">
+          Besoins électriques, ensoleillement local, batteries, protections et devis client&nbsp;: dix outils techniques
+          qui partagent un seul calcul cohérent, du premier chiffre au devis signé.
+        </p>
+        <button className="ssa-btn primary ssa-hero-cta" onClick={() => onNavigate("solar")}>
+          Démarrer un dimensionnement →
+        </button>
+        <div className="ssa-hero-ruler" aria-hidden="true">
+          {Array.from({ length: 23 }).map((_, i) => (
+            <span key={i} className={i % 4 === 0 ? "tick major" : "tick"} />
+          ))}
+        </div>
+      </section>
+
+      <div className="ssa-tool-grid">
+        {TOOLS.map((t) => (
+          <button key={t.key} className="ssa-tool-card" onClick={() => onNavigate(t.key)}>
+            <span className="ssa-tool-icon"><t.Icon size={20} /></span>
+            <span className="ssa-tool-title">{t.title}</span>
+            <span className="ssa-tool-desc">{t.desc}</span>
+          </button>
+        ))}
+      </div>
+
+      <section className="ssa-card">
+        <h2>Comment ça marche</h2>
+        <ol className="ssa-mini-steps-list">
+          <li>
+            <span className="ssa-mini-num">01</span>
+            <div><strong>Besoins</strong><p>Listez les appareils ou saisissez une consommation déjà connue.</p></div>
+          </li>
+          <li>
+            <span className="ssa-mini-num">02</span>
+            <div><strong>Site & pertes</strong><p>Localisation, orientation, batteries et rendements du système.</p></div>
+          </li>
+          <li>
+            <span className="ssa-mini-num">03</span>
+            <div><strong>Résultats & devis</strong><p>Schéma unifilaire, dimensionnement complet, devis prêt à imprimer.</p></div>
+          </li>
+        </ol>
+      </section>
+    </div>
+  );
+}
+
+/* ============================= ÉTAPE 1 ============================= */
+
+function StepBesoins(p) {
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-card">
+        <div className="ssa-card-head">
+          <h2>Liste d'appareils</h2>
+          <label className="ssa-toggle">
+            <input type="checkbox" checked={p.applianceMode} onChange={(e) => p.setApplianceMode(e.target.checked)} />
+            <span />
+          </label>
+        </div>
+        {p.applianceMode && (
+          <>
+            <div className="ssa-table">
+              <div className="ssa-table-row head">
+                <span>Appareil</span><span>P (W)</span><span>Qté</span><span>h/j</span><span>Wh/j</span><span></span>
+              </div>
+              {p.appliances.map((a) => (
+                <div className="ssa-table-row" key={a.id}>
+                  <input value={a.name} onChange={(e) => p.updateAppliance(a.id, "name", e.target.value)} />
+                  <input type="number" min="0" value={a.power} onChange={(e) => p.updateAppliance(a.id, "power", Number(e.target.value))} />
+                  <input type="number" min="0" value={a.qty} onChange={(e) => p.updateAppliance(a.id, "qty", Number(e.target.value))} />
+                  <input type="number" min="0" step="0.5" value={a.hours} onChange={(e) => p.updateAppliance(a.id, "hours", Number(e.target.value))} />
+                  <span className="ssa-mono">{fmt(a.power * a.qty * a.hours)}</span>
+                  <button className="ssa-icon-btn" onClick={() => p.removeAppliance(a.id)} aria-label="Supprimer">✕</button>
+                </div>
+              ))}
+            </div>
+            <button className="ssa-btn subtle" onClick={() => p.addAppliance()}>+ Ajouter une ligne</button>
+            <div className="ssa-chips">
+              {APPLIANCE_PRESETS.map((pr) => (
+                <button key={pr.name} className="ssa-chip" onClick={() => p.addAppliance(pr)}>
+                  {pr.name} · {pr.power}W
+                </button>
+              ))}
+            </div>
+            <p className="ssa-total-line">Sous-total appareils : <span className="ssa-mono">{fmt(p.applianceTotalWh)} Wh/j</span></p>
+
+            <button className="ssa-btn subtle" onClick={() => p.setShowPowerHelper(!p.showPowerHelper)} style={{ marginTop: "0.6rem" }}>
+              {p.showPowerHelper ? "Masquer" : "Puissance inconnue ? Calculez-la (A × V)"}
+            </button>
+            {p.showPowerHelper && (
+              <div className="ssa-field-grid" style={{ marginTop: "0.75rem" }}>
+                <label className="ssa-field">
+                  <span>Nom de l'appareil</span>
+                  <input value={p.helperName} onChange={(e) => p.setHelperName(e.target.value)} placeholder="Ex : Congélateur" />
+                </label>
+                <label className="ssa-field">
+                  <span>Tension plaque signalétique</span>
+                  <select value={p.helperVoltage} onChange={(e) => p.setHelperVoltage(Number(e.target.value))}>
+                    <option value={220}>220 V (secteur AC)</option>
+                    <option value={110}>110 V (secteur AC)</option>
+                    <option value={12}>12 V (DC)</option>
+                    <option value={24}>24 V (DC)</option>
+                  </select>
+                </label>
+                <label className="ssa-field">
+                  <span>Courant indiqué (A)</span>
+                  <input type="number" min="0" step="0.1" value={p.helperCurrent} onChange={(e) => p.setHelperCurrent(e.target.value)} />
+                </label>
+                <label className="ssa-field">
+                  <span>Type de charge (cos φ)</span>
+                  <select value={p.helperCosPhi} onChange={(e) => p.setHelperCosPhi(Number(e.target.value))}>
+                    <option value={1}>Résistif / LED / DC (cos φ = 1)</option>
+                    <option value={0.8}>Moteur, pompe, compresseur (cos φ ≈ 0.8)</option>
+                    <option value={0.6}>Vieux moteur / démarrage difficile (cos φ ≈ 0.6)</option>
+                  </select>
+                </label>
+                <label className="ssa-field">
+                  <span>Quantité</span>
+                  <input type="number" min="1" value={p.helperQty} onChange={(e) => p.setHelperQty(Number(e.target.value))} />
+                </label>
+                <label className="ssa-field">
+                  <span>Heures d'utilisation / jour</span>
+                  <input type="number" min="0" step="0.5" value={p.helperHours} onChange={(e) => p.setHelperHours(Number(e.target.value))} />
+                </label>
+                <p className="ssa-total-line" style={{ gridColumn: "1 / -1" }}>
+                  Puissance estimée : <span className="ssa-mono">{fmt(p.helperPowerW)} W</span> (P = V × I × cos φ)
+                </p>
+                <button
+                  className="ssa-btn primary"
+                  style={{ gridColumn: "1 / -1" }}
+                  onClick={() => {
+                    p.addAppliance({ name: p.helperName || "Appareil (A×V)", power: Math.round(p.helperPowerW), qty: p.helperQty, hours: p.helperHours });
+                    p.setHelperName("");
+                    p.setShowPowerHelper(false);
+                  }}
+                >
+                  + Ajouter cet appareil à la liste
+                </button>
+                <p className="ssa-hint" style={{ gridColumn: "1 / -1" }}>
+                  Utile quand l'étiquette de l'appareil n'indique que l'ampérage (A) et la tension (V), sans les watts. Le cos φ corrige pour les charges à moteur (pompes, compresseurs, ventilateurs) qui consomment moins de puissance réelle que V×I ne le suggère.
+                </p>
+              </div>
+            )}
+          </>
+        )}
+      </section>
+
+      <section className="ssa-card">
+        <div className="ssa-card-head">
+          <h2>Consommation connue</h2>
+          <label className="ssa-toggle">
+            <input type="checkbox" checked={p.manualMode} onChange={(e) => p.setManualMode(e.target.checked)} />
+            <span />
+          </label>
+        </div>
+        {p.manualMode && (
+          <div className="ssa-field-grid">
+            <label className="ssa-field">
+              <span>Période</span>
+              <select value={p.manualPeriod} onChange={(e) => p.setManualPeriod(e.target.value)}>
+                <option value="jour">Par jour</option>
+                <option value="mois">Par mois</option>
+                <option value="an">Par an</option>
+              </select>
+            </label>
+            <label className="ssa-field">
+              <span>Consommation (kWh)</span>
+              <input type="number" min="0" value={p.manualValue} onChange={(e) => p.setManualValue(e.target.value)} />
+            </label>
+            <label className="ssa-field">
+              <span>Puissance de pointe (W)</span>
+              <input type="number" min="0" value={p.manualPeakW} onChange={(e) => p.setManualPeakW(e.target.value)} />
+            </label>
+            <p className="ssa-hint" style={{ gridColumn: "1 / -1" }}>Équivalent : <span className="ssa-mono">{fmt(p.manualDailyWh)} Wh/j</span></p>
+          </div>
+        )}
+      </section>
+
+      <div className="ssa-summary-band">
+        <span>Besoin quotidien total</span>
+        <strong className="ssa-mono">{fmt(p.dailyNeedWh)} Wh/j <small>({fmt(p.dailyNeedWh / 1000, 2)} kWh/j)</small></strong>
+      </div>
+    </div>
+  );
+}
+
+/* ============================= ÉTAPE 2 ============================= */
+
+function StepSite(p) {
+  const chartMax = p.monthlyPsh ? Math.max(...p.monthlyPsh) : 7;
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-card">
+        <h2>Localisation & ensoleillement</h2>
+        <label className="ssa-field">
+          <span>Site</span>
+          <select value={p.location} onChange={(e) => p.setLocation(e.target.value)}>
+            {Object.entries(LOCATIONS).map(([k, v]) => (
+              <option key={k} value={k}>{v.label}</option>
+            ))}
+            <option value="custom">Personnalisé (saisie manuelle)</option>
+          </select>
+        </label>
+
+        {p.location === "custom" ? (
+          <label className="ssa-field">
+            <span>Irradiation moyenne (kWh/m²/jour)</span>
+            <input type="number" step="0.1" min="0" value={p.customPsh} onChange={(e) => p.setCustomPsh(e.target.value)} />
+          </label>
+        ) : (
+          <>
+            <div className="ssa-chart">
+              {p.monthlyPsh.map((v, i) => (
+                <div className="ssa-chart-col" key={i}>
+                  <div className="ssa-chart-bar-wrap">
+                    <div
+                      className={`ssa-chart-bar ${v === p.minPsh ? "min" : ""}`}
+                      style={{ height: `${(v / chartMax) * 100}%` }}
+                      title={`${MOIS[i]} : ${v} kWh/m²/j`}
+                    />
+                  </div>
+                  <span className="ssa-chart-label">{MOIS[i]}</span>
+                </div>
+              ))}
+            </div>
+            <div className="ssa-inline-stats">
+              <span>Moyenne annuelle : <b className="ssa-mono">{fmt(p.avgPsh, 2)}</b></span>
+              <span>Mois le plus faible : <b className="ssa-mono">{fmt(p.minPsh, 2)}</b></span>
+            </div>
+            <label className="ssa-check-line">
+              <input type="checkbox" checked={p.worstMonth} onChange={(e) => p.setWorstMonth(e.target.checked)} />
+              Dimensionner sur le mois le plus défavorable (recommandé en autonome)
+            </label>
+            <p className="ssa-hint">Valeurs moyennes indicatives — pour un projet final, affinez avec des données PVGIS / NASA POWER locales.</p>
+          </>
+        )}
+        <p className="ssa-hint">PSH retenu pour le calcul : <span className="ssa-mono">{fmt(p.pshUsed, 2)} kWh/m²/j</span></p>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Orientation & inclinaison</h2>
+        <label className="ssa-field">
+          <span>Configuration</span>
+          <select value={p.orientation} onChange={(e) => p.setOrientation(e.target.value)}>
+            {Object.entries(ORIENTATIONS).map(([k, v]) => (
+              <option key={k} value={k}>{v.label}{v.factor != null ? ` — ${v.factor}%` : ""}</option>
+            ))}
+          </select>
+        </label>
+        {p.orientation === "custom" && (
+          <label className="ssa-field">
+            <span>Facteur de production (%)</span>
+            <input type="number" min="1" max="100" value={p.customFactor} onChange={(e) => p.setCustomFactor(e.target.value)} />
+          </label>
+        )}
+      </section>
+
+      <section className="ssa-card">
+        <h2>Pertes système</h2>
+        <div className="ssa-field-grid">
+          <SliderField label="Câblage" value={p.cableLoss} onChange={p.setCableLoss} unit="%" max={10} />
+          <SliderField label="Poussière / température" value={p.derating} onChange={p.setDerating} unit="%" max={20} />
+          <SliderField label="Rendement régulateur" value={p.regulatorEff} onChange={p.setRegulatorEff} unit="%" min={80} max={100} />
+          <SliderField label="Rendement onduleur" value={p.inverterEff} onChange={p.setInverterEff} unit="%" min={80} max={100} />
+        </div>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Batteries & tension</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Type de batterie</span>
+            <select value={p.batteryType} onChange={(e) => { p.setBatteryType(e.target.value); p.setDodOverride(null); p.setEffOverride(null); }}>
+              {Object.entries(BATTERIES).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
+            </select>
+          </label>
+          <label className="ssa-field">
+            <span>Profondeur de décharge (%)</span>
+            <input type="number" min="10" max="95" value={p.dod} onChange={(e) => p.setDodOverride(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Rendement batterie (%)</span>
+            <input type="number" min="50" max="100" value={p.battEff} onChange={(e) => p.setEffOverride(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Autonomie (jours sans soleil)</span>
+            <input type="number" min="1" max="10" value={p.autonomyDays} onChange={(e) => p.setAutonomyDays(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Tension du système</span>
+            <select value={p.systemVoltage} onChange={(e) => p.setSystemVoltage(Number(e.target.value))}>
+              <option value={12}>12 V</option>
+              <option value={24}>24 V</option>
+              <option value={48}>48 V</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Panneaux & charges</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Puissance unitaire panneau (Wc)</span>
+            <input type="number" min="50" value={p.panelWp} onChange={(e) => p.setPanelWp(Number(e.target.value))} />
+          </label>
+          <SliderField label="Simultanéité des charges (pointe onduleur)" value={p.simultaneity} onChange={p.setSimultaneity} unit="%" min={30} max={100} />
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function SliderField({ label, value, onChange, unit, min = 0, max = 100 }) {
+  return (
+    <label className="ssa-field">
+      <span>{label} <span className="ssa-mono">{value}{unit}</span></span>
+      <input type="range" min={min} max={max} value={value} onChange={(e) => onChange(Number(e.target.value))} />
+    </label>
+  );
+}
+
+/* ============================= ÉTAPE 3 ============================= */
+
+function StepResultats(p) {
+  if (!p.hasInput) {
+    return (
+      <div className="ssa-card-stack">
+        <section className="ssa-card ssa-empty">
+          <h2>Aucune donnée de consommation</h2>
+          <p>Retournez à l'étape « Besoins » pour ajouter des appareils ou saisir une consommation connue.</p>
+        </section>
+      </div>
+    );
+  }
+
+  return (
+    <div className="ssa-card-stack">
+      <SLD
+        pv={fmt(p.realPeakWc / 1000, 2)}
+        nbPanels={p.nbPanels}
+        controller={p.controllerSize}
+        battKwh={fmt(p.bankKwh, 1)}
+        battAh={fmt(p.bankAh)}
+        inverter={fmt(p.inverterSize / 1000, 1)}
+      />
+
+      <div className="ssa-results-grid">
+        <ResultCard title="Champ photovoltaïque" accent="sun">
+          <Row label="Panneaux nécessaires" value={`${p.nbPanels} × ${p.panelWp} Wc`} />
+          <Row label="Puissance crête installée" value={`${fmt(p.realPeakWc)} Wc`} />
+          <Row label="Surface approximative" value={`${fmt(p.panelAreaApprox, 1)} m²`} />
+          <Row label="Énergie à produire / jour" value={`${fmt(p.panelEnergyNeededWh)} Wh`} />
+          <Row label="Rendement global de chaîne" value={`${fmt(p.etaTotal * 100, 1)} %`} />
+          <Row label="PSH retenu" value={`${fmt(p.pshUsed, 2)} kWh/m²/j`} />
+        </ResultCard>
+
+        <ResultCard title="Parc batteries" accent="electric">
+          <Row label="Capacité requise" value={`${fmt(p.bankAh)} Ah @ ${p.systemVoltage} V`} />
+          <Row label="Énergie stockée" value={`${fmt(p.bankKwh, 1)} kWh`} />
+          <Row label="Autonomie visée" value={`${p.autonomyDays} jour(s)`} />
+          <Row label="Profondeur de décharge" value={`${p.dod} %`} />
+          <Row label="Configuration" value={`${p.seriesCount} série × ${p.parallelCount} parallèle`} />
+          <Row label="Nombre de batteries" value={`${p.totalBatteries} × ${p.unitV}V/${p.unitAh}Ah`} />
+        </ResultCard>
+
+        <ResultCard title="Régulateur de charge" accent="electric">
+          <Row label="Courant à supporter" value={`${fmt(p.controllerCurrentRaw, 1)} A`} />
+          <Row label="Calibre recommandé" value={`${p.controllerSize} A`} />
+          <Row label="Type conseillé" value={p.systemVoltage <= 12 ? "PWM ou MPPT" : "MPPT"} />
+          <p className="ssa-hint">Calibre = puissance crête / tension batterie × 1,25 (marge de sécurité).</p>
+        </ResultCard>
+
+        <ResultCard title="Onduleur" accent="sun">
+          <Row label="Puissance de pointe des charges" value={`${fmt(p.peakLoadW)} W`} />
+          <Row label="Puissance utile estimée" value={`${fmt(p.inverterNeededW)} W`} />
+          <Row label="Calibre recommandé" value={`${fmt(p.inverterSize / 1000, 1)} kVA`} />
+          <p className="ssa-hint">Prévoir une capacité de pointe (surcharge) 2 à 3× pour les charges à démarrage moteur (pompes, compresseurs).</p>
+        </ResultCard>
+      </div>
+
+      <section className="ssa-card">
+        <button className="ssa-btn subtle" onClick={() => p.setShowCableTool(!p.showCableTool)}>
+          {p.showCableTool ? "Masquer" : "Outil bonus :"} section de câble par chute de tension
+        </button>
+        {p.showCableTool && (
+          <div className="ssa-field-grid" style={{ marginTop: "0.75rem" }}>
+            <label className="ssa-field">
+              <span>Longueur du câble (m, aller simple)</span>
+              <input type="number" min="0" value={p.cableLen} onChange={(e) => p.setCableLen(Number(e.target.value))} />
+            </label>
+            <label className="ssa-field">
+              <span>Courant (A)</span>
+              <input type="number" min="0" value={p.cableCurrent} onChange={(e) => p.setCableCurrent(Number(e.target.value))} />
+            </label>
+            <label className="ssa-field">
+              <span>Chute de tension max (%)</span>
+              <input type="number" min="0.5" step="0.5" value={p.cableDrop} onChange={(e) => p.setCableDrop(Number(e.target.value))} />
+            </label>
+            <p className="ssa-total-line" style={{ gridColumn: "1 / -1" }}>
+              Section cuivre recommandée : <span className="ssa-mono">{p.cableSection} mm²</span>
+            </p>
+          </div>
+        )}
+      </section>
+
+      <p className="ssa-disclaimer">
+        Ces calculs fournissent un pré-dimensionnement technique. Faites valider le schéma final (protections, sectionneurs, mise à la terre, conformité locale) par un installateur qualifié avant réalisation.
+      </p>
+    </div>
+  );
+}
+
+function Row({ label, value, hide }) {
+  if (hide) return null;
+  return (
+    <div className="ssa-row">
+      <span>{label}</span>
+      <span className="ssa-mono">{value}</span>
+    </div>
+  );
+}
+
+function ResultCard({ title, accent, children }) {
+  return (
+    <section className={`ssa-card ssa-result-card accent-${accent}`}>
+      <h3>{title}</h3>
+      {children}
+    </section>
+  );
+}
+
+/* ============================= SCHÉMA UNIFILAIRE ============================= */
+
+function SLD({ pv, nbPanels, controller, battKwh, battAh, inverter }) {
+  return (
+    <section className="ssa-card ssa-sld-card">
+      <h2>Schéma unifilaire</h2>
+      <svg viewBox="0 0 720 200" className="ssa-sld" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <marker id="flow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+            <circle cx="3" cy="3" r="2" fill="var(--accent-sun)" />
+          </marker>
+        </defs>
+
+        {/* liaisons */}
+        <path className="ssa-sld-line" d="M75,100 L165,100" />
+        <path className="ssa-sld-line" d="M245,100 L335,100" />
+        <path className="ssa-sld-line" d="M415,100 L505,100" />
+        <path className="ssa-sld-line" d="M585,100 L655,100" />
+
+        {/* soleil */}
+        <g transform="translate(40,100)">
+          <circle r="26" className="ssa-sld-sun" />
+          <text y="46" textAnchor="middle" className="ssa-sld-label">Soleil</text>
+        </g>
+
+        {/* panneaux */}
+        <g transform="translate(205,100)">
+          <rect x="-40" y="-30" width="80" height="60" rx="6" className="ssa-sld-node sun" />
+          <text y="6" textAnchor="middle" className="ssa-sld-value">{pv} kWc</text>
+          <text y="46" textAnchor="middle" className="ssa-sld-label">{nbPanels} panneaux</text>
+        </g>
+
+        {/* régulateur */}
+        <g transform="translate(375,100)">
+          <rect x="-38" y="-30" width="76" height="60" rx="6" className="ssa-sld-node electric" />
+          <text y="-4" textAnchor="middle" className="ssa-sld-value">{controller} A</text>
+          <text y="46" textAnchor="middle" className="ssa-sld-label">Régulateur MPPT</text>
+        </g>
+
+        {/* batteries */}
+        <g transform="translate(545,100)">
+          <rect x="-38" y="-30" width="76" height="60" rx="6" className="ssa-sld-node electric" />
+          <text y="-4" textAnchor="middle" className="ssa-sld-value">{battKwh} kWh</text>
+          <text y="46" textAnchor="middle" className="ssa-sld-label">{battAh} Ah</text>
+        </g>
+
+        {/* onduleur + maison */}
+        <g transform="translate(690,100)">
+          <rect x="-30" y="-30" width="60" height="60" rx="6" className="ssa-sld-node sun" />
+          <text y="4" textAnchor="middle" className="ssa-sld-value" style={{ fontSize: "11px" }}>{inverter} kVA</text>
+          <text y="46" textAnchor="middle" className="ssa-sld-label">Charges</text>
+        </g>
+      </svg>
+    </section>
+  );
+}
+
+/* ============================= CÂBLAGE & PROTECTION ============================= */
+
+const CIRCUIT_PRESETS = {
+  pv_string: { label: "Chaîne PV → régulateur (DC)", defaultV: 24, fuseRange: [1,2,3,4,5,6,8,10,15,20,25,30], fuseType: "Fusible/disjoncteur DC" },
+  batt_inv: { label: "Batterie → onduleur (DC)", defaultV: 24, fuseRange: [15,20,25,30,40,50,63,80,100,125,150,200], fuseType: "Disjoncteur DC" },
+  inv_load: { label: "Onduleur → tableau de charges (AC)", defaultV: 230, fuseRange: [6,10,16,20,25,32,40,50,63,80,100], fuseType: "Disjoncteur AC (courbe C)" },
+  reseau: { label: "Réseau domestique standard (AC)", defaultV: 230, fuseRange: [6,10,16,20,25,32,40,50,63], fuseType: "Disjoncteur AC (courbe C)" },
+};
+
+const SOIL_PRESETS = {
+  argile_humide: { label: "Argile humide", rho: 30 },
+  terre_agricole: { label: "Terre agricole / limon", rho: 100 },
+  sable_sec: { label: "Sable sec", rho: 1500 },
+  roche: { label: "Roche / sol très sec", rho: 4000 },
+  custom: { label: "Personnalisé", rho: null },
+};
+
+function CableProtectionTool() {
+  const [circuit, setCircuit] = useState("pv_string");
+  const [voltage, setVoltage] = useState(24);
+  const [current, setCurrent] = useState(10);
+  const [length, setLength] = useState(5);
+  const [maxDrop, setMaxDrop] = useState(2);
+  const [lightningRisk, setLightningRisk] = useState("moyen");
+  const [soil, setSoil] = useState("terre_agricole");
+  const [customRho, setCustomRho] = useState(100);
+  const [rodLength, setRodLength] = useState(2);
+  const [rodDiameter, setRodDiameter] = useState(15);
+
+  const preset = CIRCUIT_PRESETS[circuit];
+
+  const dropV = voltage * (maxDrop / 100);
+  const rho = 0.0175;
+  const sectionRaw = dropV > 0 ? (2 * length * current * rho) / dropV : 0;
+  const section = roundUpTo(sectionRaw, CABLE_SIZES);
+
+  const fuseRaw = current * 1.25;
+  const fuseSize = roundUpTo(fuseRaw, preset.fuseRange);
+
+  const spdRecommendation = {
+    faible: "Parafoudre Type 2 recommandé (protection de base des équipements électroniques).",
+    moyen: "Parafoudre Type 2 recommandé, Type 1+2 si ligne d'alimentation aérienne exposée.",
+    eleve: "Parafoudre Type 1+2 fortement recommandé (zone orageuse, ligne aérienne, ou bâtiment avec paratonnerre).",
+  }[lightningRisk];
+
+  const soilRho = soil === "custom" ? Number(customRho) : SOIL_PRESETS[soil].rho;
+  const L = Number(rodLength);
+  const d = Number(rodDiameter) / 1000; // mm -> m
+  const earthResistance = L > 0 && d > 0 ? (soilRho / (2 * Math.PI * L)) * (Math.log((8 * L) / d) - 1) : 0;
+
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-card">
+        <h2>Section de câble</h2>
+        <label className="ssa-field">
+          <span>Circuit à dimensionner</span>
+          <select value={circuit} onChange={(e) => { setCircuit(e.target.value); setVoltage(CIRCUIT_PRESETS[e.target.value].defaultV); }}>
+            {Object.entries(CIRCUIT_PRESETS).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
+          </select>
+        </label>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Tension (V)</span>
+            <input type="number" min="1" value={voltage} onChange={(e) => setVoltage(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Courant (A)</span>
+            <input type="number" min="0" step="0.1" value={current} onChange={(e) => setCurrent(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Longueur (m, aller simple)</span>
+            <input type="number" min="0" value={length} onChange={(e) => setLength(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Chute de tension max (%)</span>
+            <input type="number" min="0.5" step="0.5" value={maxDrop} onChange={(e) => setMaxDrop(Number(e.target.value))} />
+          </label>
+        </div>
+        <p className="ssa-total-line">Section cuivre recommandée : <span className="ssa-mono">{section} mm²</span></p>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Protection (fusible / disjoncteur)</h2>
+        <p className="ssa-hint">Basé sur le circuit et le courant saisis ci-dessus.</p>
+        <div className="ssa-row"><span>Type recommandé</span><span className="ssa-mono">{preset.fuseType}</span></div>
+        <div className="ssa-row"><span>Courant × marge (1,25)</span><span className="ssa-mono">{fmt(fuseRaw, 1)} A</span></div>
+        <div className="ssa-row"><span>Calibre recommandé</span><span className="ssa-mono">{fuseSize} A</span></div>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Parafoudre (SPD)</h2>
+        <label className="ssa-field">
+          <span>Niveau de risque foudre</span>
+          <select value={lightningRisk} onChange={(e) => setLightningRisk(e.target.value)}>
+            <option value="faible">Faible (zone urbaine protégée)</option>
+            <option value="moyen">Moyen (site standard)</option>
+            <option value="eleve">Élevé (zone orageuse / ligne aérienne / paratonnerre)</option>
+          </select>
+        </label>
+        <p className="ssa-total-line">{spdRecommendation}</p>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Mise à la terre (estimation)</h2>
+        <label className="ssa-field">
+          <span>Nature du sol</span>
+          <select value={soil} onChange={(e) => setSoil(e.target.value)}>
+            {Object.entries(SOIL_PRESETS).map(([k, v]) => <option key={k} value={k}>{v.label}{v.rho ? ` (≈ ${v.rho} Ω·m)` : ""}</option>)}
+          </select>
+        </label>
+        {soil === "custom" && (
+          <label className="ssa-field">
+            <span>Résistivité du sol (Ω·m)</span>
+            <input type="number" min="1" value={customRho} onChange={(e) => setCustomRho(e.target.value)} />
+          </label>
+        )}
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Longueur du piquet (m)</span>
+            <input type="number" min="0.5" step="0.5" value={rodLength} onChange={(e) => setRodLength(e.target.value)} />
+          </label>
+          <label className="ssa-field">
+            <span>Diamètre du piquet (mm)</span>
+            <input type="number" min="5" value={rodDiameter} onChange={(e) => setRodDiameter(e.target.value)} />
+          </label>
+        </div>
+        <p className="ssa-total-line">Résistance de terre estimée : <span className="ssa-mono">{fmt(earthResistance, 1)} Ω</span></p>
+        <p className="ssa-hint">
+          Estimation théorique (formule de Dwight, piquet vertical simple). La résistivité du sol varie fortement selon l'humidité et la saison —
+          une mesure de terrain (télurumètre) reste nécessaire avant validation finale. Cible usuelle : &lt; 100 Ω pour une installation domestique,
+          &lt; 10 Ω si un paratonnerre est présent. Plusieurs piquets reliés en parallèle réduisent la résistance si la cible n'est pas atteinte.
+        </p>
+      </section>
+
+      <p className="ssa-disclaimer">
+        Ces calculs fournissent un pré-dimensionnement technique. Faites valider le schéma final (protections, sectionneurs, mise à la terre, conformité locale) par un installateur qualifié avant réalisation.
+      </p>
+    </div>
+  );
+}
+
+/* ============================= VIDÉOSURVEILLANCE ============================= */
+
+const BITRATE_TABLE = {
+  "720p": { 15: 1024, 25: 1536, 30: 2048 },
+  "1080p": { 15: 2048, 25: 3072, 30: 4096 },
+  "4mp": { 15: 3072, 25: 4608, 30: 6144 },
+  "4k": { 15: 6144, 25: 8192, 30: 12288 },
+};
+
+const HDD_SIZES = [1,2,3,4,6,8,10,12,14,16,18,20,22];
+
+function VideoSurveillanceTool() {
+  const [nbCameras, setNbCameras] = useState(4);
+  const [resolution, setResolution] = useState("1080p");
+  const [fps, setFps] = useState(25);
+  const [codec, setCodec] = useState("h265");
+  const [mode, setModeRec] = useState("continu");
+  const [motionFraction, setMotionFraction] = useState(30);
+  const [retentionDays, setRetentionDays] = useState(30);
+  const [raid1, setRaid1] = useState(false);
+  const [margin, setMargin] = useState(15);
+  const [diskUnitTB, setDiskUnitTB] = useState(4);
+
+  const baseBitrateKbps = BITRATE_TABLE[resolution][fps];
+  const bitrateKbps = baseBitrateKbps * (codec === "h265" ? 0.5 : 1);
+  const activeFraction = mode === "continu" ? 1 : motionFraction / 100;
+
+  const gbPerCamPerDay = (bitrateKbps * 1000 / 8 * 86400) / 1e9;
+  let totalGB = gbPerCamPerDay * nbCameras * retentionDays * activeFraction;
+  totalGB *= 1 + margin / 100;
+  if (raid1) totalGB *= 2;
+
+  const totalTB = totalGB / 1000;
+  const diskCount = diskUnitTB > 0 ? Math.ceil(totalTB / diskUnitTB) : 0;
+  const recommendedSingleDisk = roundUpTo(totalTB, HDD_SIZES);
+
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-card">
+        <h2>Configuration des caméras</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Nombre de caméras</span>
+            <input type="number" min="1" value={nbCameras} onChange={(e) => setNbCameras(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Résolution</span>
+            <select value={resolution} onChange={(e) => setResolution(e.target.value)}>
+              <option value="720p">720p HD</option>
+              <option value="1080p">1080p Full HD</option>
+              <option value="4mp">4 MP</option>
+              <option value="4k">4K UHD</option>
+            </select>
+          </label>
+          <label className="ssa-field">
+            <span>Images / seconde</span>
+            <select value={fps} onChange={(e) => setFps(Number(e.target.value))}>
+              <option value={15}>15 fps</option>
+              <option value={25}>25 fps</option>
+              <option value={30}>30 fps</option>
+            </select>
+          </label>
+          <label className="ssa-field">
+            <span>Codec</span>
+            <select value={codec} onChange={(e) => setCodec(e.target.value)}>
+              <option value="h265">H.265 (plus efficace)</option>
+              <option value="h264">H.264 (standard)</option>
+            </select>
+          </label>
+        </div>
+        <p className="ssa-hint">Débit estimé par caméra : <span className="ssa-mono">{fmt(bitrateKbps)} kbps</span> (valeurs indicatives, la scène réelle peut varier le débit).</p>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Mode d'enregistrement & rétention</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Mode</span>
+            <select value={mode} onChange={(e) => setModeRec(e.target.value)}>
+              <option value="continu">Continu 24/7</option>
+              <option value="detection">Détection de mouvement uniquement</option>
+            </select>
+          </label>
+          {mode === "detection" && (
+            <SliderField label="Fraction active du temps" value={motionFraction} onChange={setMotionFraction} unit="%" min={5} max={100} />
+          )}
+          <label className="ssa-field">
+            <span>Jours de rétention souhaités</span>
+            <input type="number" min="1" value={retentionDays} onChange={(e) => setRetentionDays(Number(e.target.value))} />
+          </label>
+          <SliderField label="Marge de sécurité" value={margin} onChange={setMargin} unit="%" min={0} max={40} />
+        </div>
+        <label className="ssa-check-line">
+          <input type="checkbox" checked={raid1} onChange={(e) => setRaid1(e.target.checked)} />
+          Prévoir redondance RAID 1 (double le stockage nécessaire)
+        </label>
+      </section>
+
+      <section className="ssa-card ssa-result-card accent-electric">
+        <h3>Stockage nécessaire</h3>
+        <div className="ssa-row"><span>Par caméra / jour</span><span className="ssa-mono">{fmt(gbPerCamPerDay, 2)} Go</span></div>
+        <div className="ssa-row"><span>Total (avec marge{raid1 ? " + RAID1" : ""})</span><span className="ssa-mono">{fmt(totalGB)} Go</span></div>
+        <div className="ssa-row"><span>Total</span><span className="ssa-mono">{fmt(totalTB, 2)} To</span></div>
+        <div className="ssa-row"><span>Disque unique recommandé</span><span className="ssa-mono">{recommendedSingleDisk} To</span></div>
+        <label className="ssa-field" style={{ marginTop: "0.5rem" }}>
+          <span>Ou plusieurs disques de</span>
+          <select value={diskUnitTB} onChange={(e) => setDiskUnitTB(Number(e.target.value))}>
+            {HDD_SIZES.map((s) => <option key={s} value={s}>{s} To</option>)}
+          </select>
+        </label>
+        <p className="ssa-total-line">Nombre de disques nécessaires : <span className="ssa-mono">{diskCount} × {diskUnitTB} To</span></p>
+      </section>
+
+      <p className="ssa-disclaimer">
+        Le débit réel dépend de la complexité de la scène (mouvement, éclairage, compression adaptative). Ces valeurs sont des estimations standards du secteur — prévoyez toujours une marge, et vérifiez les spécifications exactes du DVR/NVR choisi.
+      </p>
+    </div>
+  );
+}
+
+/* ============================= POMPAGE SOLAIRE ============================= */
+
+function SolarPumpingTool() {
+  const [needMode, setNeedMode] = useState("direct");
+  const [dailyM3, setDailyM3] = useState(5);
+  const [nbPeople, setNbPeople] = useState(150);
+  const [litersPerPerson, setLitersPerPerson] = useState(30);
+
+  const [staticHeight, setStaticHeight] = useState(20);
+  const [dischargeHeight, setDischargeHeight] = useState(5);
+  const [frictionLoss, setFrictionLoss] = useState(10);
+
+  const [pumpEff, setPumpEff] = useState(45);
+  const [vfdEff, setVfdEff] = useState(92);
+  const [psh, setPsh] = useState(5.5);
+  const [panelWp, setPanelWp] = useState(450);
+
+  const dailyM3Computed = needMode === "direct" ? Number(dailyM3) : (nbPeople * litersPerPerson) / 1000;
+
+  const hmt = (Number(staticHeight) + Number(dischargeHeight)) * (1 + Number(frictionLoss) / 100);
+
+  const hydraulicWh = 2.725 * dailyM3Computed * hmt;
+  const panelEnergyWh = hydraulicWh / ((pumpEff / 100) * (vfdEff / 100));
+  const peakWc = psh > 0 ? panelEnergyWh / psh : 0;
+  const nbPanels = panelWp > 0 ? Math.ceil(peakWc / panelWp) : 0;
+  const realPeakWc = nbPanels * panelWp;
+
+  const pumpPowerW = pumpEff > 0 && psh > 0 ? hydraulicWh / (pumpEff / 100) / psh : 0;
+  const hourlyFlowM3 = psh > 0 ? dailyM3Computed / psh : 0;
+
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-card">
+        <h2>Besoin en eau</h2>
+        <div className="ssa-toggle-row">
+          <button className={`ssa-tab ${needMode === "direct" ? "on" : ""}`} onClick={() => setNeedMode("direct")}>Débit connu (m³/j)</button>
+          <button className={`ssa-tab ${needMode === "population" ? "on" : ""}`} onClick={() => setNeedMode("population")}>Estimer via population</button>
+        </div>
+        {needMode === "direct" ? (
+          <label className="ssa-field">
+            <span>Débit journalier requis (m³/jour)</span>
+            <input type="number" min="0" step="0.1" value={dailyM3} onChange={(e) => setDailyM3(e.target.value)} />
+          </label>
+        ) : (
+          <div className="ssa-field-grid">
+            <label className="ssa-field">
+              <span>Nombre de personnes</span>
+              <input type="number" min="1" value={nbPeople} onChange={(e) => setNbPeople(Number(e.target.value))} />
+            </label>
+            <label className="ssa-field">
+              <span>Besoin (L/jour/personne)</span>
+              <input type="number" min="1" value={litersPerPerson} onChange={(e) => setLitersPerPerson(Number(e.target.value))} />
+            </label>
+          </div>
+        )}
+        <p className="ssa-total-line">Débit journalier retenu : <span className="ssa-mono">{fmt(dailyM3Computed, 2)} m³/j</span></p>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Hauteur manométrique totale (HMT)</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Hauteur statique / profondeur d'eau (m)</span>
+            <input type="number" min="0" value={staticHeight} onChange={(e) => setStaticHeight(e.target.value)} />
+          </label>
+          <label className="ssa-field">
+            <span>Hauteur de refoulement vers réservoir (m)</span>
+            <input type="number" min="0" value={dischargeHeight} onChange={(e) => setDischargeHeight(e.target.value)} />
+          </label>
+          <SliderField label="Pertes de charge (tuyauterie, coudes)" value={frictionLoss} onChange={setFrictionLoss} unit="%" max={30} />
+        </div>
+        <p className="ssa-total-line">HMT calculée : <span className="ssa-mono">{fmt(hmt, 1)} m</span></p>
+        <p className="ssa-hint">La hauteur statique d'un forage peut augmenter en cours de pompage (rabattement) — utilisez le niveau dynamique si connu, sinon prévoyez une marge.</p>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Rendements & ensoleillement</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Type de pompe</span>
+            <select value={pumpEff} onChange={(e) => setPumpEff(Number(e.target.value))}>
+              <option value={45}>Centrifuge solaire standard (≈45%)</option>
+              <option value={55}>Volumétrique / positive displacement (≈55%)</option>
+              <option value={35}>Ancienne pompe / bas rendement (≈35%)</option>
+            </select>
+          </label>
+          <SliderField label="Rendement variateur / MPPT pompe" value={vfdEff} onChange={setVfdEff} unit="%" min={80} max={98} />
+          <label className="ssa-field">
+            <span>Heures d'ensoleillement utile (PSH)</span>
+            <input type="number" min="1" step="0.1" value={psh} onChange={(e) => setPsh(e.target.value)} />
+          </label>
+          <label className="ssa-field">
+            <span>Puissance unitaire panneau (Wc)</span>
+            <input type="number" min="50" value={panelWp} onChange={(e) => setPanelWp(Number(e.target.value))} />
+          </label>
+        </div>
+        <p className="ssa-hint">Reprenez la même valeur de PSH que dans l'onglet Solaire pour le même site.</p>
+      </section>
+
+      <section className="ssa-card ssa-result-card accent-electric">
+        <h3>Dimensionnement du champ PV</h3>
+        <div className="ssa-row"><span>Énergie hydraulique / jour</span><span className="ssa-mono">{fmt(hydraulicWh)} Wh</span></div>
+        <div className="ssa-row"><span>Énergie à produire (panneaux)</span><span className="ssa-mono">{fmt(panelEnergyWh)} Wh</span></div>
+        <div className="ssa-row"><span>Puissance crête nécessaire</span><span className="ssa-mono">{fmt(peakWc)} Wc</span></div>
+        <div className="ssa-row"><span>Panneaux nécessaires</span><span className="ssa-mono">{nbPanels} × {panelWp} Wc = {fmt(realPeakWc)} Wc</span></div>
+        <div className="ssa-row"><span>Puissance électrique pompe estimée</span><span className="ssa-mono">{fmt(pumpPowerW)} W</span></div>
+        <div className="ssa-row"><span>Débit horaire équivalent</span><span className="ssa-mono">{fmt(hourlyFlowM3, 2)} m³/h</span></div>
+      </section>
+
+      <p className="ssa-disclaimer">
+        Calcul basé sur un système au fil du soleil (sans batterie), le plus courant en pompage solaire. Le rendement réel dépend du modèle exact de pompe (consultez la courbe HMT/débit du fabricant) et du rabattement du forage en fonctionnement continu. Un variateur MPPT dédié au pompage solaire est recommandé plutôt qu'un régulateur PV standard.
+      </p>
+    </div>
+  );
+}
+
+/* ============================= CLIMATISATION ============================= */
+
+const CLIMATE_FACTORS = {
+  tropical_humide: { label: "Tropical humide (côtier, ex. Douala)", factor: 1.2 },
+  tropical_sec: { label: "Tropical sec / soudanien (ex. Ndjamena, Garoua)", factor: 1.1 },
+  temperate: { label: "Tempéré / altitude (ex. Yaoundé, Bamenda)", factor: 1.0 },
+};
+
+const INSULATION_FACTORS = {
+  bonne: { label: "Bonne isolation (toit isolé, double vitrage)", factor: 0.9 },
+  moyenne: { label: "Isolation moyenne (standard)", factor: 1.0 },
+  faible: { label: "Faible isolation (tôle directe, forte exposition)", factor: 1.15 },
+};
+
+const AC_SIZES_BTU = [9000, 12000, 18000, 24000, 30000, 36000, 48000, 60000];
+const GENSET_SIZES_KVA = [2, 3, 5, 6.5, 8, 10, 15, 20, 25, 30, 40, 45, 60, 75, 100];
+const STREETLIGHT_PANEL_SIZES = [20, 30, 40, 50, 60, 80, 100, 120, 150, 200, 300];
+
+function AirConTool() {
+  const [surface, setSurface] = useState(20);
+  const [ceilingHeight, setCeilingHeight] = useState(2.7);
+  const [occupants, setOccupants] = useState(2);
+  const [equipWatts, setEquipWatts] = useState(150);
+  const [sunExposed, setSunExposed] = useState(true);
+  const [climate, setClimate] = useState("tropical_humide");
+  const [insulation, setInsulation] = useState("moyenne");
+  const [acType, setAcType] = useState("inverter");
+  const [hoursPerDay, setHoursPerDay] = useState(8);
+
+  const baseBtu = surface * 600 * (ceilingHeight / 2.7);
+  const occupantBonus = Math.max(0, occupants - 2) * 600;
+  const equipBonus = equipWatts * 3.412;
+  const sunFactor = sunExposed ? 1.15 : 1;
+
+  const climateFactor = CLIMATE_FACTORS[climate].factor;
+  const insulationFactor = INSULATION_FACTORS[insulation].factor;
+
+  const rawBtu = (baseBtu + occupantBonus + equipBonus) * sunFactor * climateFactor * insulationFactor;
+  const recommendedBtu = roundUpTo(rawBtu, AC_SIZES_BTU);
+
+  const eer = acType === "inverter" ? 13 : 9;
+  const elecPowerW = recommendedBtu / eer;
+  const dailyWh = elecPowerW * hoursPerDay;
+
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-card">
+        <h2>Pièce à climatiser</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Surface (m²)</span>
+            <input type="number" min="1" value={surface} onChange={(e) => setSurface(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Hauteur sous plafond (m)</span>
+            <input type="number" min="2" step="0.1" value={ceilingHeight} onChange={(e) => setCeilingHeight(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Nombre d'occupants habituels</span>
+            <input type="number" min="0" value={occupants} onChange={(e) => setOccupants(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Équipements électroniques dans la pièce (W total)</span>
+            <input type="number" min="0" value={equipWatts} onChange={(e) => setEquipWatts(Number(e.target.value))} />
+          </label>
+        </div>
+        <label className="ssa-check-line">
+          <input type="checkbox" checked={sunExposed} onChange={(e) => setSunExposed(e.target.checked)} />
+          Pièce fortement exposée au soleil (fenêtres sud/ouest, toiture directement chauffée)
+        </label>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Climat & isolation</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Zone climatique</span>
+            <select value={climate} onChange={(e) => setClimate(e.target.value)}>
+              {Object.entries(CLIMATE_FACTORS).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
+            </select>
+          </label>
+          <label className="ssa-field">
+            <span>Isolation du bâtiment</span>
+            <select value={insulation} onChange={(e) => setInsulation(e.target.value)}>
+              {Object.entries(INSULATION_FACTORS).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Type de climatiseur & usage</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Technologie</span>
+            <select value={acType} onChange={(e) => setAcType(e.target.value)}>
+              <option value="inverter">Inverter (EER ≈ 13, plus économe)</option>
+              <option value="fixed">Vitesse fixe / standard (EER ≈ 9)</option>
+            </select>
+          </label>
+          <label className="ssa-field">
+            <span>Heures d'utilisation / jour</span>
+            <input type="number" min="1" max="24" value={hoursPerDay} onChange={(e) => setHoursPerDay(Number(e.target.value))} />
+          </label>
+        </div>
+      </section>
+
+      <section className="ssa-card ssa-result-card accent-electric">
+        <h3>Dimensionnement</h3>
+        <div className="ssa-row"><span>Charge thermique calculée</span><span className="ssa-mono">{fmt(rawBtu)} BTU/h</span></div>
+        <div className="ssa-row"><span>Climatiseur recommandé</span><span className="ssa-mono">{fmt(recommendedBtu)} BTU</span></div>
+        <div className="ssa-row"><span>Puissance électrique estimée</span><span className="ssa-mono">{fmt(elecPowerW)} W</span></div>
+        <div className="ssa-row"><span>Consommation quotidienne estimée</span><span className="ssa-mono">{fmt(dailyWh)} Wh/j</span></div>
+        <p className="ssa-hint">Reportez cette consommation dans l'onglet Solaire (Besoins → Consommation connue) si la climatisation doit être alimentée par le système PV.</p>
+      </section>
+
+      <p className="ssa-disclaimer">
+        Règle d'estimation standard du secteur (600 BTU/h par m² de base, ajustée selon occupation, équipements, ensoleillement, climat et isolation). Une étude thermique précise (déperditions réelles, orientation exacte, matériaux) reste recommandée pour un projet important.
+      </p>
+    </div>
+  );
+}
+
+/* ============================= GÉNÉRATEUR DE DEVIS ============================= */
+
+function QuoteTool() {
+  const [items, setItems] = useState([
+    { id: 1, name: "Panneau solaire 450Wc", qty: 6, unitCost: 65000 },
+    { id: 2, name: "Batterie lithium 200Ah", qty: 2, unitCost: 350000 },
+    { id: 3, name: "Onduleur 3kVA", qty: 1, unitCost: 280000 },
+  ]);
+  const [margin, setMargin] = useState(25);
+  const [laborCost, setLaborCost] = useState(50000);
+  const [currency, setCurrency] = useState("FCFA");
+
+  const [clientName, setClientName] = useState("");
+  const [clientPhone, setClientPhone] = useState("");
+  const [projectLocation, setProjectLocation] = useState("");
+  const [validityDays, setValidityDays] = useState(15);
+  const [quoteNumber] = useState(() => `DEV-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`);
+  const quoteDate = useMemo(() => new Date().toLocaleDateString("fr-FR", { day: "2-digit", month: "2-digit", year: "numeric" }), []);
+
+  const updateItem = (id, field, value) => setItems((list) => list.map((it) => (it.id === id ? { ...it, [field]: value } : it)));
+  const removeItem = (id) => setItems((list) => list.filter((it) => it.id !== id));
+  const addItem = () => setItems((list) => [...list, { id: Date.now() + Math.random(), name: "Nouvel article", qty: 1, unitCost: 0 }]);
+
+  const materialCost = items.reduce((s, it) => s + it.qty * it.unitCost, 0);
+  const subtotal = materialCost + Number(laborCost);
+  const marginAmount = subtotal * (margin / 100);
+  const clientPrice = subtotal + marginAmount;
+
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-card">
+        <h2>Informations client</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Nom du client</span>
+            <input value={clientName} onChange={(e) => setClientName(e.target.value)} placeholder="Ex : M. Nguema" />
+          </label>
+          <label className="ssa-field">
+            <span>Téléphone du client</span>
+            <input value={clientPhone} onChange={(e) => setClientPhone(e.target.value)} placeholder="Ex : 6XX XXX XXX" />
+          </label>
+          <label className="ssa-field">
+            <span>Lieu du projet</span>
+            <input value={projectLocation} onChange={(e) => setProjectLocation(e.target.value)} placeholder="Ex : Yaoundé, Nkolbisson" />
+          </label>
+          <label className="ssa-field">
+            <span>Validité de l'offre (jours)</span>
+            <input type="number" min="1" value={validityDays} onChange={(e) => setValidityDays(Number(e.target.value))} />
+          </label>
+        </div>
+        <p className="ssa-hint">N° {quoteNumber} · émis le {quoteDate}</p>
+      </section>
+
+      <section className="ssa-card">
+        <div className="ssa-card-head">
+          <h2>Liste du matériel</h2>
+        </div>
+        <div className="ssa-table">
+          <div className="ssa-table-row head" style={{ gridTemplateColumns: "1.8fr 0.5fr 0.8fr 0.8fr auto" }}>
+            <span>Article</span><span>Qté</span><span>Prix unit.</span><span>Total</span><span></span>
+          </div>
+          {items.map((it) => (
+            <div className="ssa-table-row" style={{ gridTemplateColumns: "1.8fr 0.5fr 0.8fr 0.8fr auto" }} key={it.id}>
+              <input value={it.name} onChange={(e) => updateItem(it.id, "name", e.target.value)} />
+              <input type="number" min="0" value={it.qty} onChange={(e) => updateItem(it.id, "qty", Number(e.target.value))} />
+              <input type="number" min="0" value={it.unitCost} onChange={(e) => updateItem(it.id, "unitCost", Number(e.target.value))} />
+              <span className="ssa-mono">{fmt(it.qty * it.unitCost)}</span>
+              <button className="ssa-icon-btn" onClick={() => removeItem(it.id)}>✕</button>
+            </div>
+          ))}
+        </div>
+        <button className="ssa-btn subtle" onClick={addItem}>+ Ajouter un article</button>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Main d'œuvre & marge</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Coût main d'œuvre / installation</span>
+            <input type="number" min="0" value={laborCost} onChange={(e) => setLaborCost(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Devise</span>
+            <select value={currency} onChange={(e) => setCurrency(e.target.value)}>
+              <option value="FCFA">FCFA</option>
+              <option value="EUR">EUR</option>
+              <option value="USD">USD</option>
+            </select>
+          </label>
+        </div>
+        <SliderField label="Marge bénéficiaire" value={margin} onChange={setMargin} unit="%" max={80} />
+      </section>
+
+      <section className="ssa-card ssa-result-card accent-sun">
+        <h3>Récapitulatif du devis</h3>
+        <div className="ssa-row"><span>Coût matériel</span><span className="ssa-mono">{fmt(materialCost)} {currency}</span></div>
+        <div className="ssa-row"><span>Main d'œuvre</span><span className="ssa-mono">{fmt(Number(laborCost))} {currency}</span></div>
+        <div className="ssa-row"><span>Sous-total (coût réel)</span><span className="ssa-mono">{fmt(subtotal)} {currency}</span></div>
+        <div className="ssa-row"><span>Marge ({margin}%)</span><span className="ssa-mono">{fmt(marginAmount)} {currency}</span></div>
+        <div className="ssa-row"><span><strong>Prix client à facturer</strong></span><span className="ssa-mono"><strong>{fmt(clientPrice)} {currency}</strong></span></div>
+        <button className="ssa-btn primary" style={{ marginTop: "0.85rem", width: "100%" }} onClick={() => window.print()}>
+          Télécharger le devis (PDF) →
+        </button>
+        <p className="ssa-hint">Ouvre la boîte d'impression du navigateur — choisissez « Enregistrer en PDF » comme destination.</p>
+      </section>
+
+      <p className="ssa-hint">
+        Astuce : reprenez les quantités calculées dans les onglets Solaire, Câblage & Protection pour remplir précisément ce devis (nombre de panneaux, batteries, disjoncteurs, mètres de câble...).
+      </p>
+
+      <PrintableQuote
+        clientName={clientName} clientPhone={clientPhone} projectLocation={projectLocation}
+        quoteNumber={quoteNumber} quoteDate={quoteDate} validityDays={validityDays}
+        items={items} laborCost={laborCost} currency={currency}
+        materialCost={materialCost} subtotal={subtotal} marginAmount={marginAmount}
+        margin={margin} clientPrice={clientPrice}
+      />
+    </div>
+  );
+}
+
+function PrintableQuote(p) {
+  return (
+    <div className="ssa-print-sheet">
+      <div className="ssa-print-head">
+        <div className="ssa-print-brand">
+          <LogoMark size={40} />
+          <div>
+            <strong>SunSize</strong>
+            <span>Dimensionnement & installation solaire — Yaoundé, Cameroun</span>
+          </div>
+        </div>
+        <div className="ssa-print-meta">
+          <div><span>Devis N°</span><b>{p.quoteNumber}</b></div>
+          <div><span>Date</span><b>{p.quoteDate}</b></div>
+          <div><span>Validité</span><b>{p.validityDays} jours</b></div>
+        </div>
+      </div>
+
+      <div className="ssa-print-client">
+        <div><span>Client</span><b>{p.clientName || "—"}</b></div>
+        <div><span>Téléphone</span><b>{p.clientPhone || "—"}</b></div>
+        <div><span>Lieu du projet</span><b>{p.projectLocation || "—"}</b></div>
+      </div>
+
+      <table className="ssa-print-table">
+        <thead>
+          <tr><th>Désignation</th><th>Qté</th><th>Prix unitaire</th><th>Total</th></tr>
+        </thead>
+        <tbody>
+          {p.items.map((it) => (
+            <tr key={it.id}>
+              <td>{it.name}</td>
+              <td>{it.qty}</td>
+              <td>{fmt(it.unitCost)} {p.currency}</td>
+              <td>{fmt(it.qty * it.unitCost)} {p.currency}</td>
+            </tr>
+          ))}
+          <tr><td colSpan="3">Main d'œuvre & installation</td><td>{fmt(Number(p.laborCost))} {p.currency}</td></tr>
+        </tbody>
+      </table>
+
+      <div className="ssa-print-totals">
+        <div><span>Sous-total</span><b>{fmt(p.subtotal)} {p.currency}</b></div>
+        <div><span>Marge ({p.margin}%)</span><b>{fmt(p.marginAmount)} {p.currency}</b></div>
+        <div className="ssa-print-grand"><span>Total à payer</span><b>{fmt(p.clientPrice)} {p.currency}</b></div>
+      </div>
+
+      <div className="ssa-print-sign">
+        <div><span>Bon pour accord — le client</span><div className="ssa-sign-line" /></div>
+        <div><span>SunSize</span><div className="ssa-sign-line" /></div>
+      </div>
+
+      <p className="ssa-print-foot">
+        SunSize — {CONTACTS.map((c) => c.label).join(" · ")}. Devis valable {p.validityDays} jours à compter de la date d'émission.
+        Prix susceptibles de variation selon la disponibilité du matériel. Ce document constitue un pré-dimensionnement ;
+        la solution finale sera confirmée après visite technique.
+      </p>
+    </div>
+  );
+}
+
+/* ============================= GROUPE ÉLECTROGÈNE HYBRIDE ============================= */
+
+function GeneratorTool() {
+  const [criticalLoadW, setCriticalLoadW] = useState(2500);
+  const [simultaneity, setSimultaneity] = useState(80);
+  const [powerFactor, setPowerFactor] = useState(0.8);
+  const [fuelType, setFuelType] = useState("diesel");
+  const [loadFactor, setLoadFactor] = useState(70);
+  const [hoursPerOutage, setHoursPerOutage] = useState(4);
+  const [outagesPerWeek, setOutagesPerWeek] = useState(3);
+  const [autonomyHours, setAutonomyHours] = useState(8);
+
+  const neededW = criticalLoadW * (simultaneity / 100);
+  const kvaRaw = powerFactor > 0 ? neededW / powerFactor / 1000 : 0;
+  const kvaSize = roundUpTo(kvaRaw, GENSET_SIZES_KVA);
+  const ratedKw = kvaSize * powerFactor;
+
+  const specificConsumption = fuelType === "diesel" ? 0.28 : 0.4; // L/kWh de sortie, ordre de grandeur
+  const outputKw = ratedKw * (loadFactor / 100);
+  const fuelLph = outputKw * specificConsumption;
+  const fuelPerOutage = fuelLph * hoursPerOutage;
+  const tankLitersForAutonomy = fuelLph * autonomyHours;
+  const monthlyRunHours = hoursPerOutage * outagesPerWeek * 4.33;
+  const monthlyFuelL = fuelLph * monthlyRunHours;
+
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-card">
+        <h2>Charge de secours à couvrir</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Puissance des charges critiques (W)</span>
+            <input type="number" min="0" value={criticalLoadW} onChange={(e) => setCriticalLoadW(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Coefficient de simultanéité (%)</span>
+            <input type="number" min="10" max="100" value={simultaneity} onChange={(e) => setSimultaneity(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Facteur de puissance (cos φ)</span>
+            <input type="number" min="0.5" max="1" step="0.05" value={powerFactor} onChange={(e) => setPowerFactor(Number(e.target.value))} />
+          </label>
+        </div>
+        <p className="ssa-hint">Reprenez ici la puissance de pointe déjà calculée dans l'onglet Solaire si ce groupe doit servir de secours au système PV.</p>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Carburant & usage</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Type de groupe</span>
+            <select value={fuelType} onChange={(e) => setFuelType(e.target.value)}>
+              <option value="diesel">Diesel (≈ 0,28 L/kWh)</option>
+              <option value="essence">Essence (≈ 0,40 L/kWh)</option>
+            </select>
+          </label>
+          <label className="ssa-field">
+            <span>Charge moyenne d'utilisation (%)</span>
+            <input type="number" min="20" max="100" value={loadFactor} onChange={(e) => setLoadFactor(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Durée moyenne d'une coupure (h)</span>
+            <input type="number" min="0.5" step="0.5" value={hoursPerOutage} onChange={(e) => setHoursPerOutage(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Coupures par semaine</span>
+            <input type="number" min="0" value={outagesPerWeek} onChange={(e) => setOutagesPerWeek(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Autonomie de réservoir souhaitée (h)</span>
+            <input type="number" min="1" value={autonomyHours} onChange={(e) => setAutonomyHours(Number(e.target.value))} />
+          </label>
+        </div>
+      </section>
+
+      <section className="ssa-card ssa-result-card accent-warn">
+        <h3>Dimensionnement du groupe</h3>
+        <div className="ssa-row"><span>Puissance de secours nécessaire</span><span className="ssa-mono">{fmt(neededW)} W</span></div>
+        <div className="ssa-row"><span>Groupe électrogène recommandé</span><span className="ssa-mono">{fmt(kvaSize, 1)} kVA</span></div>
+        <div className="ssa-row"><span>Puissance active disponible</span><span className="ssa-mono">{fmt(ratedKw, 1)} kW</span></div>
+        <div className="ssa-row"><span>Consommation horaire estimée</span><span className="ssa-mono">{fmt(fuelLph, 1)} L/h</span></div>
+        <div className="ssa-row"><span>Carburant par coupure</span><span className="ssa-mono">{fmt(fuelPerOutage, 1)} L</span></div>
+        <div className="ssa-row"><span>Réservoir pour l'autonomie visée</span><span className="ssa-mono">{fmt(tankLitersForAutonomy, 1)} L</span></div>
+        <div className="ssa-row"><span>Consommation mensuelle estimée</span><span className="ssa-mono">{fmt(monthlyFuelL, 0)} L/mois</span></div>
+        <p className="ssa-hint">En couplage hybride, le PV couvre la production quotidienne et les batteries l'appoint court terme ; le groupe ne démarre qu'en secours profond (mauvais temps prolongé ou pic de charge).</p>
+      </section>
+
+      <p className="ssa-disclaimer">
+        Consommations spécifiques données à titre indicatif (elles varient selon la marque, l'altitude et l'entretien du groupe).
+        Prévoir un contrôleur de transfert automatique (ATS) pour un basculement propre entre PV/batterie et groupe.
+      </p>
+    </div>
+  );
+}
+
+/* ============================= CHAUFFE-EAU SOLAIRE ============================= */
+
+function WaterHeaterTool() {
+  const [volumeL, setVolumeL] = useState(150);
+  const [tempIn, setTempIn] = useState(20);
+  const [tempOut, setTempOut] = useState(55);
+  const [tech, setTech] = useState("thermique");
+  const [location, setLocation] = useState("yaounde");
+  const [customPsh, setCustomPsh] = useState(4.5);
+  const [collectorEff, setCollectorEff] = useState(50);
+  const [heatingHours, setHeatingHours] = useState(5);
+  const [systemEff, setSystemEff] = useState(90);
+
+  const loc = LOCATIONS[location];
+  const pshUsed = location === "custom" ? Number(customPsh) : loc.psh.reduce((a, b) => a + b, 0) / 12;
+
+  const deltaT = Math.max(0, tempOut - tempIn);
+  const dailyEnergyKwh = (volumeL * 4.186 * deltaT) / 3600;
+  const dailyEnergyWh = dailyEnergyKwh * 1000;
+
+  // Solaire thermique : surface de capteur
+  const collectorAreaM2 = pshUsed > 0 && collectorEff > 0 ? dailyEnergyKwh / (pshUsed * (collectorEff / 100)) : 0;
+
+  // Résistance électrique alimentée par PV
+  const resistancePowerW = heatingHours > 0 ? (dailyEnergyWh / (systemEff / 100)) / heatingHours : 0;
+  const pvNeededWc = pshUsed > 0 ? (dailyEnergyWh / (systemEff / 100)) / pshUsed : 0;
+
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-card">
+        <h2>Besoin en eau chaude</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Volume d'eau chaude par jour (L)</span>
+            <input type="number" min="10" value={volumeL} onChange={(e) => setVolumeL(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Température d'entrée (°C)</span>
+            <input type="number" value={tempIn} onChange={(e) => setTempIn(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Température cible (°C)</span>
+            <input type="number" value={tempOut} onChange={(e) => setTempOut(Number(e.target.value))} />
+          </label>
+        </div>
+        <div className="ssa-row"><span>Énergie thermique nécessaire</span><span className="ssa-mono">{fmt(dailyEnergyKwh, 2)} kWh/j</span></div>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Technologie & ensoleillement</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Technologie</span>
+            <select value={tech} onChange={(e) => setTech(e.target.value)}>
+              <option value="thermique">Solaire thermique (capteur + ballon)</option>
+              <option value="pv">Résistance électrique alimentée par PV</option>
+            </select>
+          </label>
+          <label className="ssa-field">
+            <span>Localisation (irradiation)</span>
+            <select value={location} onChange={(e) => setLocation(e.target.value)}>
+              {Object.entries(LOCATIONS).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
+              <option value="custom">Personnalisé</option>
+            </select>
+          </label>
+          {location === "custom" && (
+            <label className="ssa-field">
+              <span>Irradiation moyenne (kWh/m²/j)</span>
+              <input type="number" min="1" step="0.1" value={customPsh} onChange={(e) => setCustomPsh(Number(e.target.value))} />
+            </label>
+          )}
+        </div>
+
+        {tech === "thermique" ? (
+          <div className="ssa-field-grid">
+            <label className="ssa-field">
+              <span>Rendement global du capteur (%)</span>
+              <input type="number" min="20" max="80" value={collectorEff} onChange={(e) => setCollectorEff(Number(e.target.value))} />
+            </label>
+          </div>
+        ) : (
+          <div className="ssa-field-grid">
+            <label className="ssa-field">
+              <span>Durée de chauffe souhaitée (h)</span>
+              <input type="number" min="1" max="24" value={heatingHours} onChange={(e) => setHeatingHours(Number(e.target.value))} />
+            </label>
+            <label className="ssa-field">
+              <span>Rendement système (onduleur + pertes) (%)</span>
+              <input type="number" min="50" max="100" value={systemEff} onChange={(e) => setSystemEff(Number(e.target.value))} />
+            </label>
+          </div>
+        )}
+      </section>
+
+      <section className="ssa-card ssa-result-card accent-sun">
+        <h3>Dimensionnement</h3>
+        {tech === "thermique" ? (
+          <>
+            <div className="ssa-row"><span>Surface de capteur solaire</span><span className="ssa-mono">{fmt(collectorAreaM2, 2)} m²</span></div>
+            <div className="ssa-row"><span>Ballon de stockage recommandé</span><span className="ssa-mono">{fmt(Math.max(volumeL, volumeL * 1.2))} L</span></div>
+            <p className="ssa-hint">Un capteur thermique plan (ou tubes sous vide en zone plus froide) chauffe directement l'eau ; aucune conversion électrique n'est nécessaire.</p>
+          </>
+        ) : (
+          <>
+            <div className="ssa-row"><span>Puissance de la résistance</span><span className="ssa-mono">{fmt(resistancePowerW)} W</span></div>
+            <div className="ssa-row"><span>Champ PV dédié nécessaire</span><span className="ssa-mono">{fmt(pvNeededWc)} Wc</span></div>
+            <div className="ssa-row"><span>Énergie électrique quotidienne</span><span className="ssa-mono">{fmt(dailyEnergyWh / (systemEff / 100))} Wh/j</span></div>
+            <p className="ssa-hint">Reportez cette énergie dans l'onglet Solaire (Besoins → Consommation connue) si elle doit partager le même champ PV que le reste de l'installation.</p>
+          </>
+        )}
+      </section>
+
+      <p className="ssa-disclaimer">
+        Estimation basée sur la chaleur spécifique de l'eau (4,186 kJ/kg·K). Les pertes du ballon (isolation, tuyauterie) ne sont pas incluses ;
+        prévoir une marge de 10 à 20 % supplémentaire selon la qualité de l'isolation.
+      </p>
+    </div>
+  );
+}
+
+/* ============================= ÉCLAIRAGE PUBLIC SOLAIRE ============================= */
+
+function StreetLightTool() {
+  const [lampW, setLampW] = useState(30);
+  const [hoursPerNight, setHoursPerNight] = useState(10);
+  const [dimmingRatio, setDimmingRatio] = useState(100);
+  const [location, setLocation] = useState("yaounde");
+  const [customPsh, setCustomPsh] = useState(4.5);
+  const [worstMonth, setWorstMonth] = useState(true);
+  const [autonomyDays, setAutonomyDays] = useState(3);
+  const [systemVoltage, setSystemVoltage] = useState(12);
+  const [batteryType, setBatteryType] = useState("lithium");
+  const [systemEff, setSystemEff] = useState(85);
+  const [nbLights, setNbLights] = useState(1);
+
+  const loc = LOCATIONS[location];
+  const monthlyPsh = loc ? loc.psh : null;
+  const avgPsh = monthlyPsh ? monthlyPsh.reduce((a, b) => a + b, 0) / 12 : Number(customPsh);
+  const minPsh = monthlyPsh ? Math.min(...monthlyPsh) : Number(customPsh);
+  const pshUsed = location === "custom" ? Number(customPsh) : worstMonth ? minPsh : avgPsh;
+
+  const battPreset = BATTERIES[batteryType];
+  const dod = battPreset.dod;
+
+  const effectiveLoadW = lampW * (dimmingRatio / 100);
+  const nightlyEnergyWh = effectiveLoadW * hoursPerNight;
+
+  const panelWpRaw = pshUsed > 0 ? nightlyEnergyWh / (pshUsed * (systemEff / 100)) : 0;
+  const panelWp = roundUpTo(panelWpRaw, STREETLIGHT_PANEL_SIZES);
+
+  const battAhRaw = systemVoltage > 0 && dod > 0 ? (nightlyEnergyWh * autonomyDays) / (systemVoltage * (dod / 100) * (systemEff / 100)) : 0;
+  const battKwh = (battAhRaw * systemVoltage) / 1000;
+
+  const totalPanelWp = panelWp * nbLights;
+  const totalBattKwh = battKwh * nbLights;
+
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-card">
+        <h2>Lampadaire à alimenter</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Puissance de la lampe LED (W)</span>
+            <input type="number" min="5" value={lampW} onChange={(e) => setLampW(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Heures d'éclairage par nuit</span>
+            <input type="number" min="1" max="14" value={hoursPerNight} onChange={(e) => setHoursPerNight(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Intensité moyenne sur la nuit (%)</span>
+            <input type="number" min="30" max="100" value={dimmingRatio} onChange={(e) => setDimmingRatio(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Nombre de lampadaires identiques</span>
+            <input type="number" min="1" value={nbLights} onChange={(e) => setNbLights(Number(e.target.value))} />
+          </label>
+        </div>
+        <p className="ssa-hint">L'intensité moyenne permet de tenir compte d'une gradation (ex. 100 % en début de nuit, 50 % après minuit, détection de présence…).</p>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Site & autonomie</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Localisation (irradiation)</span>
+            <select value={location} onChange={(e) => setLocation(e.target.value)}>
+              {Object.entries(LOCATIONS).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
+              <option value="custom">Personnalisé</option>
+            </select>
+          </label>
+          {location === "custom" ? (
+            <label className="ssa-field">
+              <span>Irradiation moyenne (kWh/m²/j)</span>
+              <input type="number" min="1" step="0.1" value={customPsh} onChange={(e) => setCustomPsh(Number(e.target.value))} />
+            </label>
+          ) : (
+            <label className="ssa-check-line">
+              <input type="checkbox" checked={worstMonth} onChange={(e) => setWorstMonth(e.target.checked)} />
+              Dimensionner sur le mois le plus défavorable
+            </label>
+          )}
+          <label className="ssa-field">
+            <span>Autonomie sans soleil (jours)</span>
+            <input type="number" min="1" max="7" value={autonomyDays} onChange={(e) => setAutonomyDays(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Tension du système (V)</span>
+            <select value={systemVoltage} onChange={(e) => setSystemVoltage(Number(e.target.value))}>
+              <option value={12}>12 V</option>
+              <option value={24}>24 V</option>
+            </select>
+          </label>
+          <label className="ssa-field">
+            <span>Type de batterie</span>
+            <select value={batteryType} onChange={(e) => setBatteryType(e.target.value)}>
+              {Object.entries(BATTERIES).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
+            </select>
+          </label>
+          <label className="ssa-field">
+            <span>Rendement global du système (%)</span>
+            <input type="number" min="60" max="100" value={systemEff} onChange={(e) => setSystemEff(Number(e.target.value))} />
+          </label>
+        </div>
+      </section>
+
+      <section className="ssa-card ssa-result-card accent-sun">
+        <h3>Dimensionnement par lampadaire</h3>
+        <div className="ssa-row"><span>Énergie consommée par nuit</span><span className="ssa-mono">{fmt(nightlyEnergyWh)} Wh</span></div>
+        <div className="ssa-row"><span>Panneau solaire recommandé</span><span className="ssa-mono">{fmt(panelWp)} Wc</span></div>
+        <div className="ssa-row"><span>Batterie recommandée</span><span className="ssa-mono">{fmt(battAhRaw)} Ah ({systemVoltage} V) — {fmt(battKwh, 2)} kWh</span></div>
+      </section>
+
+      {nbLights > 1 && (
+        <section className="ssa-card ssa-result-card accent-electric">
+          <h3>Total pour {nbLights} lampadaires</h3>
+          <div className="ssa-row"><span>Puissance PV totale</span><span className="ssa-mono">{fmt(totalPanelWp)} Wc</span></div>
+          <div className="ssa-row"><span>Capacité batterie totale</span><span className="ssa-mono">{fmt(totalBattKwh, 2)} kWh</span></div>
+        </section>
+      )}
+
+      <p className="ssa-disclaimer">
+        Kit tout-en-un (panneau + batterie + LED intégrés) ou installation séparée : dans les deux cas, dimensionnez sur le mois le plus défavorable
+        pour garantir l'éclairage toute l'année.
+      </p>
+    </div>
+  );
+}
+
+/* ============================= ROI & FINANCEMENT ============================= */
+
+function ROITool() {
+  const [installCost, setInstallCost] = useState(3500000);
+  const [monthlySavings, setMonthlySavings] = useState(60000);
+  const [lifespanYears, setLifespanYears] = useState(20);
+  const [tariffEscalation, setTariffEscalation] = useState(4);
+  const [maintenancePctYear, setMaintenancePctYear] = useState(1);
+
+  const [creditRate, setCreditRate] = useState(12);
+  const [creditMonths, setCreditMonths] = useState(36);
+  const [downPaymentPct, setDownPaymentPct] = useState(20);
+
+  const [leaseMonthly, setLeaseMonthly] = useState(90000);
+  const [leaseMonths, setLeaseMonths] = useState(48);
+  const [leaseResidual, setLeaseResidual] = useState(300000);
+
+  // --- Cash ---
+  const paybackMonthsCash = monthlySavings > 0 ? installCost / monthlySavings : 0;
+  let cumulative = 0, totalSavingsCash = 0, currentMonthly = monthlySavings;
+  const totalMonths = lifespanYears * 12;
+  for (let y = 0; y < lifespanYears; y++) {
+    totalSavingsCash += currentMonthly * 12;
+    currentMonthly *= 1 + tariffEscalation / 100;
+  }
+  const maintenanceTotal = installCost * (maintenancePctYear / 100) * lifespanYears;
+  const netGainCash = totalSavingsCash - installCost - maintenanceTotal;
+
+  // --- Crédit ---
+  const downPayment = installCost * (downPaymentPct / 100);
+  const loanAmount = installCost - downPayment;
+  const r = creditRate / 100 / 12;
+  const n = creditMonths;
+  const monthlyPayment = r > 0 ? (loanAmount * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1) : loanAmount / n;
+  const netMonthlyDuringLoan = monthlySavings - monthlyPayment;
+  const totalPaidCredit = downPayment + monthlyPayment * n;
+  const totalInterest = totalPaidCredit - installCost;
+
+  // --- Leasing ---
+  const netMonthlyLease = monthlySavings - leaseMonthly;
+  const totalPaidLease = leaseMonthly * leaseMonths + Number(leaseResidual);
+
+  return (
+    <div className="ssa-card-stack">
+      <section className="ssa-card">
+        <h2>Investissement & économies</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Coût total de l'installation</span>
+            <input type="number" min="0" value={installCost} onChange={(e) => setInstallCost(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Économie mensuelle estimée (facture évitée)</span>
+            <input type="number" min="0" value={monthlySavings} onChange={(e) => setMonthlySavings(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Durée de vie du système (années)</span>
+            <input type="number" min="1" max="30" value={lifespanYears} onChange={(e) => setLifespanYears(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Hausse annuelle du tarif électrique évité (%)</span>
+            <input type="number" min="0" max="20" value={tariffEscalation} onChange={(e) => setTariffEscalation(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Maintenance annuelle (% du coût initial)</span>
+            <input type="number" min="0" max="10" step="0.5" value={maintenancePctYear} onChange={(e) => setMaintenancePctYear(Number(e.target.value))} />
+          </label>
+        </div>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Scénario crédit</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Apport initial (%)</span>
+            <input type="number" min="0" max="100" value={downPaymentPct} onChange={(e) => setDownPaymentPct(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Taux d'intérêt annuel (%)</span>
+            <input type="number" min="0" max="40" step="0.5" value={creditRate} onChange={(e) => setCreditRate(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Durée du crédit (mois)</span>
+            <input type="number" min="6" max="120" value={creditMonths} onChange={(e) => setCreditMonths(Number(e.target.value))} />
+          </label>
+        </div>
+      </section>
+
+      <section className="ssa-card">
+        <h2>Scénario leasing</h2>
+        <div className="ssa-field-grid">
+          <label className="ssa-field">
+            <span>Loyer mensuel</span>
+            <input type="number" min="0" value={leaseMonthly} onChange={(e) => setLeaseMonthly(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Durée du bail (mois)</span>
+            <input type="number" min="6" max="120" value={leaseMonths} onChange={(e) => setLeaseMonths(Number(e.target.value))} />
+          </label>
+          <label className="ssa-field">
+            <span>Valeur résiduelle de rachat</span>
+            <input type="number" min="0" value={leaseResidual} onChange={(e) => setLeaseResidual(Number(e.target.value))} />
+          </label>
+        </div>
+      </section>
+
+      <section className="ssa-card ssa-result-card accent-sun">
+        <h3>Comptant</h3>
+        <div className="ssa-row"><span>Seuil de rentabilité</span><span className="ssa-mono">{fmt(paybackMonthsCash, 1)} mois</span></div>
+        <div className="ssa-row"><span>Économies cumulées sur {lifespanYears} ans</span><span className="ssa-mono">{fmt(totalSavingsCash)}</span></div>
+        <div className="ssa-row"><span>Maintenance cumulée</span><span className="ssa-mono">-{fmt(maintenanceTotal)}</span></div>
+        <div className="ssa-row"><span>Gain net sur la durée de vie</span><span className="ssa-mono">{fmt(netGainCash)}</span></div>
+      </section>
+
+      <section className="ssa-card ssa-result-card accent-electric">
+        <h3>Crédit ({creditMonths} mois, {creditRate}&nbsp;%)</h3>
+        <div className="ssa-row"><span>Apport initial</span><span className="ssa-mono">{fmt(downPayment)}</span></div>
+        <div className="ssa-row"><span>Mensualité</span><span className="ssa-mono">{fmt(monthlyPayment)}</span></div>
+        <div className="ssa-row"><span>Trésorerie nette / mois pendant le crédit</span><span className="ssa-mono">{fmt(netMonthlyDuringLoan)}</span></div>
+        <div className="ssa-row"><span>Coût total (apport + mensualités)</span><span className="ssa-mono">{fmt(totalPaidCredit)}</span></div>
+        <div className="ssa-row"><span>Intérêts payés au total</span><span className="ssa-mono">{fmt(totalInterest)}</span></div>
+      </section>
+
+      <section className="ssa-card ssa-result-card accent-warn">
+        <h3>Leasing ({leaseMonths} mois)</h3>
+        <div className="ssa-row"><span>Trésorerie nette / mois pendant le bail</span><span className="ssa-mono">{fmt(netMonthlyLease)}</span></div>
+        <div className="ssa-row"><span>Coût total (loyers + rachat résiduel)</span><span className="ssa-mono">{fmt(totalPaidLease)}</span></div>
+        <p className="ssa-hint">
+          {netMonthlyLease >= 0
+            ? "L'économie mensuelle couvre déjà le loyer : trésorerie positive dès le premier mois."
+            : "Le loyer dépasse l'économie mensuelle : le client paie un supplément chaque mois jusqu'au rachat."}
+        </p>
+      </section>
+
+      <p className="ssa-disclaimer">
+        Comparatif simplifié à but indicatif : il ne remplace pas un plan de financement établi avec l'organisme prêteur ou le loueur,
+        qui peut inclure assurances, frais de dossier ou clauses spécifiques. Les hausses tarifaires futures restent des hypothèses.
+      </p>
+    </div>
+  );
+}
+
+/* ============================= STYLE ============================= */
+
+const CSS = `
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+.ssa-root {
+  --bg: #0A0F14;
+  --surface: #131B23;
+  --surface-2: #1A2530;
+  --surface-3: #212E3A;
+  --accent-sun: #F5A524;
+  --accent-sun-deep: #C97E1A;
+  --accent-electric: #2DD4C6;
+  --accent-warn: #E8604A;
+  --text: #F6F2E8;
+  --text-muted: #7E93A3;
+  --text-dim: #576675;
+  --border: rgba(255,255,255,0.08);
+  --border-strong: rgba(245,165,36,0.4);
+
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  min-height: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 84px;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ssa-root * { box-sizing: border-box; }
+.ssa-root :focus-visible { outline: 2px solid var(--accent-sun); outline-offset: 2px; }
+
+/* ---------- Blueprint corner signature ---------- */
+.ssa-card, .ssa-hero, .ssa-tool-card {
+  position: relative;
+}
+.ssa-card::before, .ssa-card::after,
+.ssa-hero::before, .ssa-hero::after,
+.ssa-tool-card::before, .ssa-tool-card::after {
+  content: ""; position: absolute; width: 9px; height: 9px; pointer-events: none;
+  border: 1px solid var(--border-strong); opacity: 0.7;
+}
+.ssa-card::before, .ssa-hero::before, .ssa-tool-card::before { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+.ssa-card::after, .ssa-hero::after, .ssa-tool-card::after { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+.ssa-header {
+  position: sticky; top: 0; z-index: 10;
+  background: linear-gradient(180deg, var(--bg) 82%, transparent);
+  padding: 1rem 1rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.ssa-header-top { display: flex; align-items: center; justify-content: space-between; }
+.ssa-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--accent-sun);
+}
+.ssa-brand {
+  display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.85rem;
+  background: none; border: none; padding: 0; cursor: pointer; color: inherit; text-align: left;
+}
+.ssa-brand h1 { margin: 0.1rem 0 0; }
+.ssa-brand .ssa-eyebrow { display: block; }
+.ssa-header h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700; font-size: 1.5rem; margin: 0 0 0.85rem;
+  letter-spacing: 0.01em;
+}
+.ssa-brand h1 { margin: 0 !important; }
+.ssa-home-btn {
+  background: var(--surface-2); border: 1px solid var(--border); color: var(--text-muted);
+  border-radius: 9px; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; margin-bottom: 0.85rem;
+}
+.ssa-home-btn:hover { color: var(--accent-sun); border-color: var(--border-strong); }
+
+.ssa-footer {
+  margin: 0.5rem 1rem 1rem;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: center;
+}
+.ssa-footer-brand {
+  display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+  font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 1.05rem; margin-bottom: 0.6rem;
+}
+.ssa-footer-title { font-size: 0.82rem; color: var(--text-muted); margin: 0 0 0.75rem; }
+.ssa-contact-row { display: flex; flex-direction: column; gap: 0.55rem; }
+.ssa-contact-btn {
+  display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+  background: #1F7A5C; color: #EAFBF3; text-decoration: none;
+  border-radius: 8px; padding: 0.65rem 1rem; font-size: 0.88rem; font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+.ssa-contact-btn:active { opacity: 0.85; }
+
+@media (min-width: 420px) {
+  .ssa-contact-row { flex-direction: row; justify-content: center; }
+  .ssa-contact-btn { flex: 1; max-width: 220px; }
+}
+.ssa-tabs { display: flex; gap: 0.4rem; overflow-x: auto; padding-bottom: 0.75rem; }
+.ssa-tab {
+  flex-shrink: 0; display: flex; align-items: center; gap: 0.35rem;
+  background: var(--surface-2); border: 1px solid var(--border); color: var(--text-muted);
+  border-radius: 999px; padding: 0.45rem 0.85rem 0.45rem 0.7rem; font-size: 0.78rem; font-weight: 600; cursor: pointer;
+  font-family: 'Inter', sans-serif; white-space: nowrap;
+}
+.ssa-tab svg { flex-shrink: 0; }
+.ssa-tab.on { background: var(--accent-sun); color: #1a1305; border-color: var(--accent-sun); }
+.ssa-toggle-row { display: flex; gap: 0.4rem; margin-bottom: 0.75rem; }
+.ssa-progress { display: flex; align-items: center; }
+.ssa-progress-seg { display: flex; align-items: center; flex: 1; }
+.ssa-progress-seg:last-child { flex: 0; }
+.ssa-progress-dot {
+  width: 22px; height: 22px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem;
+  border: 1px solid var(--border); color: var(--text-muted);
+  flex-shrink: 0;
+}
+.ssa-progress-seg.on .ssa-progress-dot { background: var(--accent-sun); border-color: var(--accent-sun); color: #1a1305; }
+.ssa-progress-label { font-size: 0.72rem; color: var(--text-muted); margin: 0 0.5rem 0 0.4rem; white-space: nowrap; }
+.ssa-progress-seg.on .ssa-progress-label { color: var(--text); }
+.ssa-progress-line { flex: 1; height: 1px; background: var(--border); }
+
+.ssa-main { padding: 1rem; }
+.ssa-card-stack { display: flex; flex-direction: column; gap: 0.85rem; }
+
+.ssa-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+.ssa-card h2 { font-family: 'Rajdhani', sans-serif; font-size: 1.05rem; font-weight: 600; margin: 0 0 0.75rem; }
+.ssa-card h3 { font-family: 'Rajdhani', sans-serif; font-size: 0.95rem; font-weight: 600; margin: 0 0 0.6rem; }
+.ssa-card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; }
+.ssa-card-head h2 { margin: 0; }
+
+/* ---------- Home / hero ---------- */
+.ssa-hero {
+  background: radial-gradient(120% 140% at 50% -20%, rgba(245,165,36,0.16), transparent 60%), var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem 1.25rem 1.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+.ssa-hero > svg { margin-bottom: 0.9rem; }
+.ssa-hero .ssa-eyebrow { display: block; margin-bottom: 0.6rem; }
+.ssa-hero-title {
+  font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 1.7rem; line-height: 1.15;
+  margin: 0 0 0.7rem; letter-spacing: 0.01em;
+}
+.ssa-hero-sub { font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; margin: 0 auto 1.3rem; max-width: 30rem; }
+.ssa-hero-cta {
+  font-size: 0.92rem; padding: 0.8rem 1.4rem;
+}
+.ssa-hero-ruler { display: flex; justify-content: center; gap: 5px; margin-top: 1.6rem; }
+.ssa-hero-ruler .tick { width: 1px; height: 6px; background: var(--border-strong); }
+.ssa-hero-ruler .tick.major { height: 11px; background: var(--accent-sun); }
+
+.ssa-tool-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem; }
+.ssa-tool-card {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 0.45rem;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 0.9rem; text-align: left; cursor: pointer; color: inherit; font-family: 'Inter', sans-serif;
+}
+.ssa-tool-card:hover { border-color: var(--border-strong); }
+.ssa-tool-icon {
+  width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  background: var(--surface-3); color: var(--accent-sun);
+}
+.ssa-tool-title { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 0.95rem; }
+.ssa-tool-desc { font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; }
+
+.ssa-mini-steps-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.9rem; }
+.ssa-mini-steps-list li { display: flex; gap: 0.8rem; align-items: flex-start; }
+.ssa-mini-num {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--accent-sun);
+  border: 1px solid var(--border-strong); border-radius: 6px; padding: 0.15rem 0.4rem; flex-shrink: 0; margin-top: 0.1rem;
+}
+.ssa-mini-steps-list strong { font-family: 'Rajdhani', sans-serif; font-size: 0.92rem; display: block; margin-bottom: 0.15rem; }
+.ssa-mini-steps-list p { margin: 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.4; }
+
+.ssa-empty { text-align: center; color: var(--text-muted); }
+.ssa-empty h2 { color: var(--text); }
+
+.ssa-toggle { position: relative; width: 40px; height: 22px; flex-shrink: 0; }
+.ssa-toggle input { opacity: 0; width: 100%; height: 100%; position: absolute; margin: 0; cursor: pointer; z-index: 1; }
+.ssa-toggle span {
+  position: absolute; inset: 0; background: var(--surface-2); border-radius: 999px; border: 1px solid var(--border);
+  transition: background 0.15s;
+}
+.ssa-toggle span::after {
+  content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px;
+  background: var(--text-muted); border-radius: 50%; transition: transform 0.15s, background 0.15s;
+}
+.ssa-toggle input:checked + span { background: rgba(242,169,60,0.25); }
+.ssa-toggle input:checked + span::after { transform: translateX(18px); background: var(--accent-sun); }
+
+.ssa-table { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.6rem; }
+.ssa-table-row {
+  display: grid; grid-template-columns: 1.6fr 0.7fr 0.5fr 0.6fr 0.7fr auto;
+  gap: 0.35rem; align-items: center;
+}
+.ssa-table-row.head { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.ssa-table-row input {
+  width: 100%; background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px;
+  color: var(--text); padding: 0.4rem 0.35rem; font-size: 0.82rem; font-family: 'Inter', sans-serif;
+}
+.ssa-icon-btn {
+  background: transparent; border: none; color: var(--accent-warn); cursor: pointer; font-size: 0.9rem; padding: 0.2rem;
+}
+
+.ssa-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.7rem 0; }
+.ssa-chip {
+  background: var(--surface-2); border: 1px solid var(--border); color: var(--text-muted);
+  border-radius: 999px; padding: 0.35rem 0.7rem; font-size: 0.75rem; cursor: pointer;
+}
+.ssa-chip:hover { border-color: var(--accent-sun); color: var(--text); }
+
+.ssa-total-line { font-size: 0.85rem; color: var(--text-muted); margin: 0.3rem 0 0; }
+.ssa-mono { font-family: 'IBM Plex Mono', monospace; color: var(--text); }
+
+.ssa-field-grid { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
+.ssa-field { display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.82rem; color: var(--text-muted); }
+.ssa-field select, .ssa-field input[type="number"] {
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px;
+  color: var(--text); padding: 0.55rem 0.6rem; font-size: 0.88rem; font-family: 'Inter', sans-serif;
+}
+.ssa-field input[type="range"] { accent-color: var(--accent-sun); width: 100%; }
+
+.ssa-hint { font-size: 0.75rem; color: var(--text-muted); margin: 0.4rem 0 0; line-height: 1.4; }
+.ssa-check-line { display: flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; margin: 0.6rem 0; color: var(--text-muted); }
+
+.ssa-summary-band {
+  position: sticky; bottom: 76px; z-index: 5;
+  background: var(--surface-2); border: 1px solid var(--accent-sun);
+  border-radius: 10px; padding: 0.7rem 1rem;
+  display: flex; align-items: center; justify-content: space-between; font-size: 0.85rem;
+}
+.ssa-summary-band strong { font-size: 0.95rem; }
+.ssa-summary-band small { color: var(--text-muted); font-weight: 400; }
+
+.ssa-chart { display: flex; align-items: flex-end; gap: 0.35rem; height: 110px; margin-bottom: 0.5rem; }
+.ssa-chart-col { flex: 1; display: flex; flex-direction: column; align-items: center; height: 100%; }
+.ssa-chart-bar-wrap { flex: 1; display: flex; align-items: flex-end; width: 100%; }
+.ssa-chart-bar { width: 100%; background: var(--accent-sun); border-radius: 3px 3px 0 0; opacity: 0.85; min-height: 3px; }
+.ssa-chart-bar.min { background: var(--accent-warn); opacity: 1; }
+.ssa-chart-label { font-size: 0.6rem; color: var(--text-muted); margin-top: 0.3rem; }
+.ssa-inline-stats { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+
+.ssa-results-grid { display: grid; grid-template-columns: 1fr; gap: 0.85rem; }
+.ssa-result-card { border-left: 3px solid var(--border); }
+.ssa-result-card.accent-sun { border-left-color: var(--accent-sun); }
+.ssa-result-card.accent-electric { border-left-color: var(--accent-electric); }
+.ssa-row { display: flex; justify-content: space-between; gap: 0.5rem; font-size: 0.84rem; padding: 0.3rem 0; border-bottom: 1px dashed var(--border); }
+.ssa-row:last-of-type { border-bottom: none; }
+.ssa-row span:first-child { color: var(--text-muted); }
+
+.ssa-sld-card { overflow-x: auto; }
+.ssa-sld { width: 100%; min-width: 620px; height: auto; }
+.ssa-sld-line { stroke: var(--accent-sun); stroke-width: 2; stroke-dasharray: 5 5; fill: none; animation: ssaFlow 1.2s linear infinite; }
+@keyframes ssaFlow { to { stroke-dashoffset: -20; } }
+.ssa-sld-sun { fill: var(--accent-sun); opacity: 0.9; }
+.ssa-sld-node { fill: var(--surface-2); stroke: var(--border); stroke-width: 1; }
+.ssa-sld-node.sun { stroke: var(--accent-sun); }
+.ssa-sld-node.electric { stroke: var(--accent-electric); }
+.ssa-sld-value { fill: var(--text); font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600; }
+.ssa-sld-label { fill: var(--text-muted); font-family: 'Inter', sans-serif; font-size: 11px; }
+
+.ssa-disclaimer { font-size: 0.72rem; color: var(--text-muted); line-height: 1.5; padding: 0 0.25rem; }
+
+.ssa-nav {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  max-width: 640px; margin: 0 auto;
+  background: var(--surface); border-top: 1px solid var(--border);
+  padding: 0.7rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
+  backdrop-filter: blur(6px);
+}
+.ssa-nav-summary { font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--accent-sun); }
+.ssa-btn {
+  border-radius: 8px; padding: 0.6rem 1rem; font-size: 0.85rem; font-weight: 600; cursor: pointer;
+  font-family: 'Inter', sans-serif; border: 1px solid transparent;
+}
+.ssa-btn.primary { background: linear-gradient(180deg, var(--accent-sun), var(--accent-sun-deep)); color: #1a1305; }
+.ssa-btn.ghost { background: transparent; border-color: var(--border); color: var(--text-muted); }
+.ssa-btn.ghost:disabled { opacity: 0.4; cursor: default; }
+.ssa-btn.subtle { background: var(--surface-2); color: var(--text); border-color: var(--border); align-self: flex-start; }
+
+@media (min-width: 560px) {
+  .ssa-field-grid { grid-template-columns: 1fr 1fr; }
+  .ssa-results-grid { grid-template-columns: 1fr 1fr; }
+  .ssa-hero-title { font-size: 2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ssa-sld-line { animation: none; }
+}
+
+/* ---------- Printable devis (letterhead) ---------- */
+.ssa-print-sheet { display: none; }
+.ssa-print-head { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #1a1305; padding-bottom: 12px; margin-bottom: 18px; }
+.ssa-print-brand { display: flex; gap: 12px; align-items: center; }
+.ssa-print-brand strong { display: block; font-family: 'Rajdhani', sans-serif; font-size: 1.4rem; }
+.ssa-print-brand span { display: block; font-size: 0.75rem; color: #555; }
+.ssa-print-meta { text-align: right; font-size: 0.78rem; }
+.ssa-print-meta div { margin-bottom: 3px; }
+.ssa-print-meta span { color: #666; margin-right: 6px; }
+.ssa-print-client { display: flex; gap: 28px; margin-bottom: 18px; font-size: 0.86rem; flex-wrap: wrap; }
+.ssa-print-client span { display: block; color: #666; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 2px; }
+.ssa-print-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-bottom: 18px; }
+.ssa-print-table th, .ssa-print-table td { border: 1px solid #ccc; padding: 7px 9px; text-align: left; }
+.ssa-print-table th { background: #f2f2f2; }
+.ssa-print-table td:nth-child(2), .ssa-print-table td:nth-child(3), .ssa-print-table td:nth-child(4),
+.ssa-print-table th:nth-child(2), .ssa-print-table th:nth-child(3), .ssa-print-table th:nth-child(4) { text-align: right; }
+.ssa-print-totals { margin-left: auto; width: 280px; font-size: 0.85rem; }
+.ssa-print-totals div { display: flex; justify-content: space-between; padding: 3px 0; }
+.ssa-print-grand { border-top: 2px solid #1a1305; font-size: 1.05rem; margin-top: 5px; padding-top: 7px !important; }
+.ssa-print-sign { display: flex; justify-content: space-between; margin-top: 56px; gap: 40px; }
+.ssa-print-sign > div { flex: 1; font-size: 0.8rem; }
+.ssa-sign-line { border-bottom: 1px solid #999; height: 46px; margin-top: 10px; }
+.ssa-print-foot { font-size: 0.68rem; color: #666; margin-top: 26px; line-height: 1.5; }
+
+@media print {
+  html, body { background: #fff; }
+  body * { visibility: hidden; }
+  .ssa-print-sheet, .ssa-print-sheet * { visibility: visible; }
+  .ssa-print-sheet {
+    display: block; position: absolute; left: 0; top: 0; width: 100%;
+    padding: 10mm; color: #111; background: #fff;
+  }
+}
+`;
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(<SolarSizingApp />);
+
+</script>
+</body>
+</html>
